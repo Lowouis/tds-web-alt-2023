@@ -1,0 +1,29 @@
+html
+{
+    margin: 30px;
+}
+a
+{
+    text-decoration:none;
+    color:black;
+    padding: 1%;
+    margin: 0;
+    width: 60px;
+}
+a:hover
+{
+    background-color: aliceblue;
+}
+#links
+{
+   display:flex;
+   flex-direction:column;
+}
+.lorem1 p 
+{
+    padding: 50px;
+}
+.lorem2  p
+{
+    padding: 50px;
+}
