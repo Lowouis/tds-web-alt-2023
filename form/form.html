@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/6d9cc71036.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+		<title>Formulaire</title>
+	</head>
+
+	<body>
+		<div class="card">
+			<div class="left-card">
+				<h1>Nous contacter</h1>
+				<h3>Nous serions ravis de vous entendre</h3>
+			</div>
+			<div class="right-card">
+				<form action='submit-contact.php' method="GET">
+					<div class="surname">
+						<label>Prénom* :</label>
+						<input name="surname" type="text" placeholder="Entrez votre prénom">
+					</div>
+					<div class="firstname">
+						<label>Nom* : </label>
+						<input type="text" name="firstname" placeholder="Entrez votre nom">
+					</div>
+					<div class="mail">
+						<label>Mail* :</label>
+						<input type="email" name="mail" placeholder="Entrez votre e-mail">
+					</div>
+					<div class="comments">
+						<label>Commentaire* :</label>
+							<textarea type="text" rows="10" name="comment" placeholder="Entrez un commentaire"></textarea>
+					</div>
+					<button type="submit">Soumettre</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
