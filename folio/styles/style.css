@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: auto;
+}
+
+html {
+    background-color: #36454F;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.menu-container{
+    margin-top:100px;
+}
+
+
+.menu a{
+    color: 	#DAA06D;
+    margin: 10px;
+    font-size: 150px;
+    padding: 10px 10px 0 10px;
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+
+
+
+}
+.hi p{
+    color:white;
+    font-size: 40px;
+    padding-bottom: 0;
+    font-family: 'Space Mono', monospace;
+
+}
+.hi{
+    display: flex;
+    justify-content: center;
+;
+}
+
+.menu a:hover {
+    color: rgb(242, 210, 189);
+    background-color: rgb(184, 115, 51);
+    border-radius: 10px;
+
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: .5fr 15fr;
+    grid-template-rows: 1fr;
+
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+    top: 20%;
+    transform: translateY(5%);
+
+}
+.empty-bar{
+    height: 100% ;
+    width: 10px;
+    background-color: rgb(255,255,255,.05);
+    border-radius: 10px;
+}
+
+.subsection{
+    height: 700px;
+    width: 90%;
+    margin: 0 1% 0 1%;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+}
+#desc-top{
+    font-size: 16px;
+}
+
+#pp{
+    opacity: .6;
+    filter: sepia(1);
+    border-radius: 300px;
+    height: 200px;
+    margin: 2%;
+}

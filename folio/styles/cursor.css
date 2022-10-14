@@ -1,0 +1,40 @@
+[class^="cursor"]{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.cursor-inner{
+    width: 30px;
+    height:30px;
+    background: #fff;
+}
+.content:hover ~ .cursor-inner{
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    mix-blend-mode: difference;
+}
+.content:hover ~ .cursor-inner{
+    opacity: 0;
+}
+
+.expand{
+    animation: both 2s ease-in;
+    animation-name: expand;
+
+}
+
+@keyframes expand {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(100);
+    }
+
+}
