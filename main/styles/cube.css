@@ -10,28 +10,24 @@
 
 
 .container{
+    position: fixed;
+    height: 200px;
+    top: 9%;
+    left: 65%;
+    margin-top: -100px; /* Negative half of height. */
+    margin-left: -100px; /* Negative half of width. */
     width: 200px;
     height: 200px;
     perspective: 650px;
-    margin: 25px auto 0;
     filter: blur(.5px);
-    transform: scale(.5);
+    transform: scale(.2);
 }
 
-.container:hover{
-    animation: tcube 1s 1 linear both;
-}
 
-@keyframes tcube {
-    from{transform: scale(.5);}
-    to{transform: scale(.8);}
-}
+
+
 .container{
     animation: tcuber 1s 1 linear both;
-}
-@keyframes tcuber {
-    from{transform: scale(.8);}
-    to{transform: scale(.5);}
 }
 
 

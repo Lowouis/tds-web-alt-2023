@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
 html{
-	background-color: black;
+	background:url("../data/bg.png") repeat-y black;
 	color: white;
 	font-family: 'Cabin', sans-serif;
 }
+
+#name{
+	position: fixed;
+	width: 500px;
+	height: 200px;
+	top: 13%;
+	left: 50%;
+	margin-top: -100px; /* Negative half of height. */
+	margin-left: -250px; /* Negative half of width. */
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 4rem;
+}
+
 
 h3{
 	margin-top: 5%;
@@ -31,21 +46,22 @@ div{
 	border-radius: 20px;
 	width: 20%;	
 	margin: 20px;
+	background-color: rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 0px 0px #FFFFFF;
+	transition: box-shadow 300ms;
 }
 
 
 
 .cell:hover{ 
 	cursor: pointer;
-	animation-name: cell-hover-ease ;
-	animation-duration: .5s ;
-	animation-iteration-count: 1 ;
-	animation-fill-mode: both;
+	box-shadow: 0px 0px 0px 6px #FFFFFF;
+	transition: box-shadow 300ms;
 }
 
 @keyframes cell-hover-ease{
 	from{box-shadow: 0px 0px 0px 0px #FFFFFF;}
-	to{box-shadow: 0px 0px 0px 6px #FFFFFF;}
+	to{}
 }
 .lang{
 	padding-top: 15px;
@@ -63,9 +79,11 @@ div{
 .cells-stack .cell{
 	width: 300px;
 }
+.container-body{
+	margin: 250px auto auto auto;
+}
 .cells-stack {
 	width: 100%;
-	margin:auto auto;
 	display: inline-grid;
 	justify-items: center;
 	align-items: center;
@@ -73,4 +91,19 @@ div{
 	grid-template-rows: repeat(4, 1fr);
 	grid-column-gap: 0;
 	grid-row-gap: 0;
+}
+
+@media screen and (max-width: 1340px){
+	.cells-stack {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+
+	}
+}
+@media screen and (max-width: 659px){
+	.cells-stack {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+
+	}
 }
