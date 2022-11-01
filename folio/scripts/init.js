@@ -1,27 +1,32 @@
+let prevScrollpos = window.pageYOffset;
 
-var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-80px";
-    }
-    if(prevScrollpos <= 1){
-        document.getElementById("navbar").classList.remove("transparent")
+    const currentScrollPos = window.pageYOffset;
+
+    if(prevScrollpos >= 30){
+        document.getElementById("navbar").classList.remove("nav-on-scroll")
+        document.getElementById("navbar").classList.add("sticky-to-top")
+
     }
     else{
-        document.getElementById("navbar").classList.add("transparent")
+        document.getElementById("navbar").classList.remove("sticky-to-top")
+        document.getElementById("navbar").classList.add("nav-on-scroll")
+
     }
     prevScrollpos = currentScrollPos;
 }
 
 
 window.onclick = e => {
-        let Allclass = e.target.classList
-        Allclass.forEach(element =>{
+
+
+    if(e.target.classList[1] != null && e.target.classList[1] == "ab"){
+        let TotalClasses = e.target.classList
+        TotalClasses.forEach(element =>{
             SelectedButton(element,e.target,"ab")
         })
+    }
+
 }
 
 function SelectedButton(selectedClass,target,classToCompare){
@@ -49,39 +54,47 @@ function changeArticle(target){
 // 'switcha' <= ou j'insere l'article choisis
 
 
-let algo = '<article class="star content">\n' +
-    '                <h2>A* Solver Algorithm</h2>\n' +
-    '                <h3>2021</h3>\n' +
-    '                <p>Worked with a team of three designers to build a marketing website and e-commerce\n' +
-    '                    platform for blistabloc, an ambitious startup originating from Northeastern\n' +
-    '                    Helped solidify a brand direction for blistabloc that spans both packaging and web\n' +
-    '                    Interfaced with clients on a weekly basis, providing technological expertise\n' +
-    '                </p>\n' +
-    '                <div class="add">\n' +
-    '                    <a  href="https://github.com/Lowouis/ricochet-robot" target=”_blank” class="fade btn hover">Watch on github</a>\n' +
-    '                    <a target=”_blank” href="data/files/astarreport_fr.pdf" class="btn fade hover"> PDF Report</a>\n' +
-    '                </div>\n' +
-    '\n' +
-    '            </article> '
+let algo = `<article class="star content">
+                <h2>Algorithm A* - Java</h2>
+                <h3>2021</h3>
+                <p>J’ai travaillé sur un projet universitaire ou je devais de créer une “intelligence artificielle”, ou je devais
+                    utilisé l’algorithme A* dans un programme en JAVA. Le jeux ricochet robot était à reproduire avec son
+                    interface graphique. Je devais aussi créer plusieurs pateaux de jeu aléatoire.
+                    Le tout sur un durée donnée de 4 mois, avec une soutenance oral et un rapport écrit.
+                </p>
+                <div class="add">
+                    <a  href="https://github.com/Lowouis/ricochet-robot" target=”_blank” class="fade btn hover">Github</a>
+                    <a target=”_blank” href="data/files/astarreport_fr.pdf" class="btn fade hover"> Rapport</a>
+                </div>
+            </article> `
 
-let nim = '<article class="nim content">\n' +
-    '                <h2>Jeux de Nim IA</h2>\n' +
-    '                <h3>2019</h3>\n' +
-    '                <p>Worked with a team of three designers to build a marketing website and e-commerce\n' +
-    '                    platform for blistabloc, an ambitious startup originating from Northeastern\n' +
-    '                    Helped solidify a brand direction for blistabloc that spans both packaging and web\n' +
-    '                    Interfaced with clients on a weekly basis, providing technological expertise\n' +
-    '                </p>\n' +
-    '                <div class="add">\n' +
-    '                    <a  href="https://github.com/Lowouis/ricochet-robot" target=”_blank” class="fade btn hover">Watch on github</a>\n' +
-    '                    <a target=”_blank” href="data/files/astarreport_fr.pdf" class="btn fade hover"> PDF Report</a>\n' +
-    '                </div>\n' +
-    '\n' +
-    '            </article> '
+let nim = `<article class="nim content">
+             <h2>Jeux de Nim IA</h2>
+             <h3>2019</h3>
+             <p>Pour ce projet nous devions réaliser une “inteligence artificielle” qui gagner ou égalise toutes les parties 
+                 de jeu de nim que l’on jouait contre l’ordinateur.
+                Aucun affichage n’était demandé, le jeu ce était sur le terminal.
+             </p>
+             <div class="add">
+                 <a target=”_blank” class="btn-nf ">Pas d'archive</a>
+             </div></article>`
+
+let netflix = `<article class="netflix content">
+                    <h2>Netflix Clone - React</h2>
+                    <h3>2019</h3>
+                    <p>Ce projet est un projet personnel, je voulais faire un clone de netflix pour apprendre le React. 
+                    Dans ce projet j’utilise le module “Redux” et “Axios”. J utilise aussi firebase pour le systeme d’authentification.
+                    L’application est disponible sur Firebase et sur Vercel.
+                    </p>
+                    <div class="add">
+                        <a  href="https://github.com/Lowouis/netflix-clone-react" target=”_blank” class="fade btn hover">Github</a>
+                        <a target=”_blank” href="https://netflix-clone-8bb18.web.app/" class="btn fade hover">App</a></div>
+
+                </article>`
 
 
 let bw = '<article class="bw content">\n' +
-    '                <h2>Boat War Java App</h2>\n' +
+    '                <h2>Bataille Navale - Java</h2>\n' +
     '                <h3>2021</h3>\n' +
     '                <p>Worked with a team of three designers to build a marketing website and e-commerce\n' +
     '                    platform for blistabloc, an ambitious startup originating from Northeastern\n' +
@@ -89,32 +102,30 @@ let bw = '<article class="bw content">\n' +
     '                    Interfaced with clients on a weekly basis, providing technological expertise\n' +
     '                </p>\n' +
     '                <div class="add">\n' +
-    '                    <a  href="https://github.com/Lowouis/ricochet-robot" target=”_blank” class="fade btn hover">Watch on github</a>\n' +
-    '                    <a target=”_blank” href="data/files/astarreport_fr.pdf" class="btn fade hover"> PDF Report</a>\n' +
+    '                    <a  href="https://github.com/Lowouis/Bataille-Naval" target=”_blank” class="fade btn hover">Github</a>\n' +
     '                </div>\n' +
     '\n' +
     '            </article> '
 
-let morpion = '<article class="morpion content">\n' +
-    '                <h2>Morpion IA</h2>\n' +
-    '                <h3>2021</h3>\n' +
-    '                <p>Worked with a team of three designers to build a marketing website and e-commerce\n' +
-    '                    platform for blistabloc, an ambitious startup originating from Northeastern\n' +
-    '                    Helped solidify a brand direction for blistabloc that spans both packaging and web\n' +
-    '                    Interfaced with clients on a weekly basis, providing technological expertise\n' +
-    '                </p>\n' +
-    '                <div class="add">\n' +
-    '                    <a  href="https://github.com/Lowouis/ricochet-robot" target=”_blank” class="fade btn hover">Watch on github</a>\n' +
-    '                    <a target=”_blank” href="data/files/astarreport_fr.pdf" class="btn fade hover"> PDF Report</a>\n' +
-    '                </div>\n' +
-    '\n' +
-    '            </article> '
+let city = `<article class="city content">
+                   <h2>Generateur de ville - Python</h2>
+                   <h3>2019</h3>
+                   <p>Worked with a team of three designers to build a marketing website and e-commerce
+                       platform for blistabloc, an ambitious startup originating from Northeastern
+                       Helped solidify a brand direction for blistabloc that spans both packaging and web
+                       Interfaced with clients on a weekly basis, providing technological expertise
+                   </p>
+                   <div class="add">
+                        <a target=”_blank” class="btn-nf ">Pas d'archive</a>
+                   </div>
+            </article> `
 
 const articles = {
     'star' : algo,
+    'netflix' : netflix,
     'nim' : nim,
     'bw' : bw,
-    'morpion' : morpion
+    'city' : city
 }
 
 

@@ -98,13 +98,6 @@
 					<a class="lang-detail">JSX, REACT, CSS</a>
 				</div>
 			</div>
-
-
-
-
-
-
-
 		</div>
 </div>
 

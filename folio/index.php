@@ -1,5 +1,5 @@
 <?php
-$menu = ["about", "works","perks","contact"];
+$menu = ["A propos", "Projets","Compétences","Experience","Formation","Contact"];
 $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
 ?>
 
@@ -15,7 +15,8 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
 <body>
 <!-- nav -->
 <?= include_once 'nav.php' ?>
-
+<img id="gradient1" class="fixed-bg" src="./data/files/gradient.png">
+<img id="gradient2" class="fixed-bg" src="./data/files/gradient.png">
 
 <!-- fixed components -->
 <?= include_once 'components.php' ?>
@@ -27,6 +28,8 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
 <!-- content  -->
 <?= include_once 'about.php' ?>
 <?= include_once 'works.php' ?>
+<?= include_once 'experience.php'?>
+<?= include_once 'formation.php'?>
 <?= include_once 'perks.php' ?>
 <?= include_once 'contact.php' ?>
 

@@ -4,7 +4,7 @@ $library = ["bootstrap", "vanilla-tilt", "barbara", "numpy"];
 $framework = ["Twig"];
 ?>
 <section id="perks" class="cat">
-    <h1><a class="c-number">03.</a>Perks</h1>
+    <h1><a class="c-number">06.</a>Compétences</h1>
     <div id="perks-wrapper">
         <table>
             <tbody>

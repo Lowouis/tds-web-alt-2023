@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
     scrollbar-width: thin;
     scrollbar-color: #8589ff #ffffff;
+    z-index: 1;
+}
+
+input {
+    all: unset;
 }
 
 /* Chrome, Edge, and Safari */
@@ -19,6 +26,23 @@
 *::-webkit-scrollbar-thumb {
     background-color: #8589ff;
     border-radius: 40px;
+}
+
+.fixed-bg{
+    position: fixed;
+    z-index: 0;
+
+}
+#gradient1{
+    top: -400px;
+    right: -600px;
+    transform: rotate(30deg);
+}
+
+#gradient2{
+    bottom: -400px;
+    left: -400px;
+    transform: rotate(30deg);
 }
 
 
@@ -53,25 +77,65 @@ p{
     font-size: var(--p-size);
 }
 
-html{
-    background-color: #020C1B;
+.grid-ntn{
+    background-color: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 30px;
 }
-#navbar{
-    width: 100%;
+
+.grid-ntn article p{
+    line-height:32px;
+}
+.sp-img p{
+    font-size: 1.3rem;
+    margin-right: 30px;
+}
+html{
+    background-color: #040404;
+}
+
+
+
+.nav-on-scroll{
+    width: 1000px;
     text-align: center;
     padding: 30px 0 30px 0;
-    font-family: 'Inconsolata', monospace;
+    margin-left: -500px;
+    left: 50%;
+    font-family: 'Lexend', sans-serif;
     position: fixed;
-    top: 0;
+    top: 20px;
     display: block;
-    transition: top 0.3s;
-    z-index:99;
+    transition: all 0.3s;
+    z-index:999;
+    border-radius: 100px;
+    background-color: rgba(255,255,255,0.20);
+    backdrop-filter: blur(20px);
+}
 
+.sticky-to-top{
+    top:-10px;
+    width: 1000px;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    margin-left: -500px;
+    left: 50%;
+    font-family: 'Lexend', sans-serif;
+    position: fixed;
+    display: block;
+    transition: all 0.3s;
+    z-index:999;
+    border-radius: 0 0 50px 50px;
+    background-color: rgba(255,255,255,0.11);
+    backdrop-filter: blur(20px);
 
 }
-nav .nava{
-    color:#57EBFF;
-    margin-right: 10em;
+
+
+.nava{
+    color:white;
+    margin-right: 3em;
+    font-size: 1.2rem;
     animation-name:nav-op-out;
     animation-duration: .5s;
     animation-fill-mode: both;
@@ -80,8 +144,8 @@ nav .nava{
     text-decoration: none;
 }
 
-nav .nava:before{
-    content :  "// ";
+nav .nava:after{
+    content :  "";
 }
 
 
@@ -92,7 +156,6 @@ nav .nava:before{
 
 
 nav .nava:hover{
-    font-family: 'Inconsolata', monospace;
     animation-name:nav-op;
     animation-duration: .5s;
     animation-fill-mode: both;
@@ -138,6 +201,16 @@ nav .nava:hover{
     font-size: 17px;
     border: solid 1px #6285FF;
     color : #6285FF;
+    text-decoration: none;
+}
+
+.btn-nf{
+    font-family: 'Inconsolata', monospace;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 17px;
+    border: solid 1px #A6A6A6;
+    color : #A6A6A6;
     text-decoration: none;
 }
 
@@ -275,7 +348,7 @@ section{
     display: flex;
     flex-direction: column;
     border-left: solid 1px #7E83FF;
-    height: 290px;
+    height: 363px;
     padding: 0;
     margin-right: 15px;
 }
@@ -418,4 +491,67 @@ td{
 .fade-exit-active {
     opacity: 0;
     transition: opacity 300ms var(--easing);
+}
+
+.fb{
+    border-left: solid 3px #7E83FF;
+}
+
+#contact{
+    font-family: 'Inter', sans-serif;
+}
+#contact form{
+    width: 100%;
+}
+.contact-input{
+    border: 1.5px solid white;
+    background-color: transparent;
+    padding: 15px 7px 15px 7px;
+    border-radius: 10px;
+}
+.wd-400{
+    width: 96%;
+}
+
+.in-grid{
+    display : grid;
+    row-gap: 10px;
+}
+
+label{
+    color:#62FFA1;
+    font-size: 1.4rem;
+}
+
+.first-form-box{
+    display: flex;
+    flex-direction: row;
+}
+.sec-form-box{
+    display: flex;
+    flex-direction: column;
+}
+.parent_form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.lbc{
+    background-color: rgba(255,255,255,.02);
+}
+
+::placeholder {
+    color: rgba(255,255,255,.2);
+}
+
+.form-btn{
+
+    margin:  10px auto ;
+    width: 97%;
+    text-align: center;
+    border-color: #62FFA1;
+    color:#62FFA1;
 }
