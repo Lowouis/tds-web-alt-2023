@@ -37,6 +37,8 @@ textarea {
 .fixed-bg{
     position: fixed;
     z-index: 0;
+    filter:opacity(.7);
+    transform: scale(2);
 
 }
 #gradient1{
@@ -55,7 +57,7 @@ textarea {
 
 :root{
     --title-color: #57EBFF;
-    --title-size: 7rem;
+    --title-size: 5rem;
     --title-number-color : #CEFF67;
     --title-number-size : 2rem;
     --p-color : #86E2FF;
@@ -131,7 +133,7 @@ html{
     display: block;
     transition: all 0.3s;
     z-index:999;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 30px 30px;
     background-color: rgba(255,255,255,0.11);
     backdrop-filter: blur(20px);
 

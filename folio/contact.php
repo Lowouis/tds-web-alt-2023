@@ -21,9 +21,13 @@
             <div class="sec-form-box">
                 <label>Adresse mail</label>
                 <input name="mail" type="text" class="contact-input lbc" placeholder="Ecrire votre email">
+
+                <label>Objet</label>
+                <input name="objet" type="text" class="contact-input lbc" placeholder="Ecrire l'objet du message">
                 <label>Message</label>
-                <textarea name="message" type="text" placeholder="Ecrivez votre message" class="lbc contact-input" rows="10"></textarea>
+                <textarea name="message" type="text" placeholder="Ecrivez votre message" class="lbc contact-input" rows="7"></textarea>
                 <a class="btn fade hover form-btn active-click">Soumettre</a>
+
             </div>
         </form>
     </div>

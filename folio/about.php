@@ -1,4 +1,4 @@
-<section id="about" class="cat">
+<section id="a propos" class="cat">
     <h1><a class="c-number">01.</a>A propos</h1>
     <div class="grid-ntn sp-img">
         <article>

@@ -1,5 +1,5 @@
 <?php
-$menu = ["A propos", "Projets","Compétences","Experience","Formation","Contact"];
+$menu = ["A propos", "Projets","Experience","Formation","Compétences","Contact"];
 $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
 ?>
 
@@ -10,6 +10,7 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
     <title>Louis'dev</title>
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <script src="https://kit.fontawesome.com/6d9cc71036.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./data/img/icon.ico" type="image/x-icon">
 
 </head>
 <body>

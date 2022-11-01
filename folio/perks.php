@@ -3,7 +3,7 @@ $languages = ["Javascript", "Java", "Python", "PHP", "C", "HTML", "CSS"];
 $library = ["bootstrap", "vanilla-tilt", "barbara", "numpy"];
 $framework = ["Twig"];
 ?>
-<section id="perks" class="cat">
+<section id="compétences" class="cat">
     <h1><a class="c-number">05.</a>Compétences</h1>
     <div id="perks-wrapper">
         <table>

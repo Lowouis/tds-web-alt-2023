@@ -8,4 +8,4 @@
 </div>
 
 
-<a class="gh-btn btn hover fade fixup" href="#start"><i class="fa-solid fa-arrow-up"></i></a>
+<a class="gh-btn btn hover fade fixup" href="#"><i class="fa-solid fa-arrow-up"></i></a>

@@ -1,4 +1,4 @@
-<section id="works" class="article-menu cat">
+<section id="projets" class="article-menu cat">
     <h1><a class="c-number">02.</a>Projets</h1>
     <div id="navbar-works" class="grid-1-4">
         <nav>
