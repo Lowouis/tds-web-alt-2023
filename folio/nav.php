@@ -1,5 +1,5 @@
 <div class="top">
-    <nav id="navbar" class="sticky-to-top">
+    <nav id="navbar" class="nav-on-scroll">
         <?php for($i=0;$i<sizeof($menu);$i++) : ?>
             <a class="nava" href="#<?= strtolower($menu[$i]) ?>"><?= $menu[$i]?></a>
         <?php endfor ?>
