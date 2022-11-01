@@ -1,5 +1,5 @@
 <section id="works" class="article-menu cat">
-    <h1><a class="c-number">02.</a>Works</h1>
+    <h1><a class="c-number">02.</a>Projets</h1>
     <div id="navbar-works" class="grid-1-4">
         <nav>
             <a class="star ab fade transparent-border hold-left-border">A* Algorithm</a>
