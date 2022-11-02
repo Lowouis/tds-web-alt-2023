@@ -1,8 +1,14 @@
 <?php
 
-function addTask(){
-    $_POST['list'][date('H:i:s')] = $_POST['task'];
 
+
+/*function addTask():void{
+    if(isset($_POST["task"])){
+        $file = __DIR__ . DIRECTORY_SEPARATOR . "data" . DIRECTORY_SEPARATOR . idate("U") . ".txt";
+        $toAdd = $_POST["task"];
+        file_put_contents($file,  $toAdd);
+    }
 }
-var_dump($_POST["list"]);
-$_POST['task'] = "";
+addTask();*/
+
+include_once "index.php";
