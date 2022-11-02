@@ -1,6 +1,6 @@
 <section id="projets" class="article-menu cat">
     <h1><a class="c-number">02.</a>Projets</h1>
-    <div id="navbar-works" class="grid-1-4">
+    <div id="navbar-works" class="grid-1-4 card-glass">
         <nav>
             <a class="star ab fade transparent-border hold-left-border">A* Algorithm</a>
             <a class="nim ab fade transparent-border">Nim Game</a>
@@ -10,15 +10,15 @@
         </nav>
         <div id="switcha" class="layers">
             <article class="star content">
-                <h2>Algorithm A* - Java</h2>
+                <h2 class="nice-green">Algorithm A* - Java</h2>
                 <h3>2021</h3>
-                <p>J’ai travaillé sur un projet universitaire ou je devais de créer une “intelligence artificielle”, ou je devais
+                <p>Nous devions créer une “intelligence artificielle”, ou je devais
                     utilisé l’algorithme A* dans un programme en JAVA. Le jeux ricochet robot était à reproduire avec son
                     interface graphique. Je devais aussi créer plusieurs pateaux de jeu aléatoire.
                     Le tout sur un durée donnée de 4 mois, avec une soutenance oral et un rapport écrit.
                 </p>
                 <div class="add">
-                    <a  href="https://github.com/Lowouis/ricochet-robot" target=”_blank” class="fade btn hover">Github</a>
+                    <a href="https://github.com/Lowouis/ricochet-robot" target=”_blank” class="fade btn hover">Github</a>
                     <a target=”_blank” href="data/files/astarreport_fr.pdf" class="btn fade hover"> Rapport</a>
                 </div>
 

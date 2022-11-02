@@ -55,9 +55,9 @@ function changeArticle(target){
 
 
 let algo = `<article class="star content">
-                <h2>Algorithm A* - Java</h2>
+                <h2 class="nice-green">Algorithm A* - Java</h2>
                 <h3>2021</h3>
-                <p>J’ai travaillé sur un projet universitaire ou je devais de créer une “intelligence artificielle”, ou je devais
+                <p>Nous devions créer une “intelligence artificielle”, ou je devais
                     utilisé l’algorithme A* dans un programme en JAVA. Le jeux ricochet robot était à reproduire avec son
                     interface graphique. Je devais aussi créer plusieurs pateaux de jeu aléatoire.
                     Le tout sur un durée donnée de 4 mois, avec une soutenance oral et un rapport écrit.
@@ -69,7 +69,7 @@ let algo = `<article class="star content">
             </article> `
 
 let nim = `<article class="nim content">
-             <h2>Jeux de Nim IA</h2>
+             <h2 class="nice-green">Jeux de Nim IA</h2>
              <h3>2019</h3>
              <p>Pour ce projet nous devions réaliser une “inteligence artificielle” qui gagner ou égalise toutes les parties 
                  de jeu de nim que l’on jouait contre l’ordinateur.
@@ -80,7 +80,7 @@ let nim = `<article class="nim content">
              </div></article>`
 
 let netflix = `<article class="netflix content">
-                    <h2>Netflix Clone - React</h2>
+                    <h2 class="nice-green">Netflix Clone - React</h2>
                     <h3>2019</h3>
                     <p>Ce projet est un projet personnel, je voulais faire un clone de netflix pour apprendre le React. 
                     Dans ce projet j’utilise le module “Redux” et “Axios”. J utilise aussi firebase pour le systeme d’authentification.
@@ -94,7 +94,7 @@ let netflix = `<article class="netflix content">
 
 
 let bw = '<article class="bw content">\n' +
-    '                <h2>Bataille Navale - Java</h2>\n' +
+    '                <h2 class="nice-green">Bataille Navale - Java</h2>\n' +
     '                <h3>2021</h3>\n' +
     '                <p>Worked with a team of three designers to build a marketing website and e-commerce\n' +
     '                    platform for blistabloc, an ambitious startup originating from Northeastern\n' +
@@ -108,7 +108,7 @@ let bw = '<article class="bw content">\n' +
     '            </article> '
 
 let city = `<article class="city content">
-                   <h2>Generateur de ville - Python</h2>
+                   <h2 class="nice-green">Generateur de ville - Python</h2>
                    <h3>2019</h3>
                    <p>Worked with a team of three designers to build a marketing website and e-commerce
                        platform for blistabloc, an ambitious startup originating from Northeastern
