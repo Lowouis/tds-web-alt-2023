@@ -520,9 +520,16 @@ td{
     background-color: rgba(255,255,255,.04);
     padding: 30px;
     border-radius: 20px;
+    width: 100%;
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .contact-input{
-    border: 1.5px solid white;
+    border: 1px solid white;
     padding: 15px 7px 15px 7px;
     border-radius: 10px;
 }
@@ -534,6 +541,22 @@ td{
     display : grid;
     row-gap: 10px;
 }
+
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.color-g{
+    color:var(--title-number-color);
+}
+
+.mg-45{
+    margin-right:45px;
+}
+
+
 
 label{
     color:#62FFA1;
@@ -590,6 +613,10 @@ input:focus, textarea:focus{
     font-family: 'Inter', sans-serif;
 }
 
+.c-light{
+    color:rgba(255,255,255,.6);
+}
+
 .wd-440{
     width: 440px; !important;
 }
@@ -597,4 +624,10 @@ input:focus, textarea:focus{
 
 .active-click:active{
     background-color: rgba(255,255,255,.3);
+}
+
+
+.line{
+    margin: 40px 0;
+    width: 100%;
 }
