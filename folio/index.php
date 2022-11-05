@@ -8,12 +8,11 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
 <head>
     <meta charset="UTF-8">
     <title>Louis'dev</title>
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
     <script src="https://kit.fontawesome.com/6d9cc71036.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./data/img/icon.ico" type="image/x-icon">
-
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
 </head>
-<body>
+<body id="main">
 <!-- nav -->
 <?= include_once 'nav.php' ?>
 <img id="gradient1" class="fixed-bg" src="./data/files/gradient.png">

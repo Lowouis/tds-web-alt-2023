@@ -12,6 +12,8 @@ function cursorMovement(){
     })
 }
 
+
+
 function cursorClick(){
     const cursor = document.querySelector(".cursor-inner")
     cursor.addEventListener("onclick",() =>{

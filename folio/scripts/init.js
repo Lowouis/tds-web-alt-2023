@@ -1,3 +1,16 @@
+const [red, green, blue] = [9,10,33]
+const section1 = document.getElementById('main')
+
+
+window.addEventListener('scroll', () => {
+    const t = window.scrollY / 150
+    console.log(window.scrollY)
+    const y = 1 + (window.scrollY || window.pageYOffset) / 1800
+    const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+    section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+})
+
+
 let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {

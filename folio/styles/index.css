@@ -10,7 +10,9 @@
     z-index: 1;
 }
 
-
+#main{
+    background-color: rgb(9,10,33);
+}
 
 input {
     all: unset;
@@ -42,14 +44,14 @@ textarea {
 
 }
 #gradient1{
-    top: -400px;
-    right: -600px;
+    top: -600px;
+    right: -700px;
     transform: rotate(30deg);
 }
 
 #gradient2{
-    bottom: -400px;
-    left: -400px;
+    bottom: -500px;
+    left: -500px;
     transform: rotate(30deg);
 }
 
@@ -336,7 +338,7 @@ section{
 }
 
 .cat, #start, #navbar{
-    transform: scale(0.7);
+    transform: scale(0.5);
 }
 .c-number{
     color: var(--title-number-color);
@@ -409,7 +411,7 @@ footer{
 footer p{
     color: #909090;
     text-align:center ;
-    margin-bottom: 25px;
+
     font-family: 'JetBrains Mono', monospace;
 }
 footer p:hover{

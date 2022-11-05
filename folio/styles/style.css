@@ -5,13 +5,15 @@
     cursor: auto;
 }
 
-html {
-    background-color: #36454F;
+html{
+    background-color: white;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
 }
+
+
 
 .menu-container{
     margin-top:100px;
