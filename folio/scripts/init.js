@@ -1,10 +1,9 @@
-const [red, green, blue] = [9,10,33]
+const [red, green, blue] = [23, 0, 19]
 const section1 = document.getElementById('main')
 
 
 window.addEventListener('scroll', () => {
     const t = window.scrollY / 150
-    console.log(window.scrollY)
     const y = 1 + (window.scrollY || window.pageYOffset) / 1800
     const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
     section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
@@ -14,32 +13,26 @@ window.addEventListener('scroll', () => {
 let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
-    const currentScrollPos = window.pageYOffset;
-
-    if(prevScrollpos >= 30){
-        document.getElementById("navbar").classList.remove("nav-on-scroll")
-        document.getElementById("navbar").classList.add("sticky-to-top")
-
+    if(window.innerWidth > 1000){
+        const currentScrollPos = window.pageYOffset;
+        if(prevScrollpos >= 30){
+            document.getElementById("navbar").classList.remove("nav-on-scroll")
+            document.getElementById("navbar").classList.add("sticky-to-top")
+        }
+        else{
+            document.getElementById("navbar").classList.remove("sticky-to-top")
+            document.getElementById("navbar").classList.add("nav-on-scroll")
+        }
+        prevScrollpos = currentScrollPos;
     }
-    else{
-        document.getElementById("navbar").classList.remove("sticky-to-top")
-        document.getElementById("navbar").classList.add("nav-on-scroll")
-
-    }
-    prevScrollpos = currentScrollPos;
 }
-
-
 window.onclick = e => {
-
-
     if(e.target.classList[1] != null && e.target.classList[1] == "ab"){
         let TotalClasses = e.target.classList
         TotalClasses.forEach(element =>{
             SelectedButton(element,e.target,"ab")
         })
     }
-
 }
 
 function SelectedButton(selectedClass,target,classToCompare){
@@ -145,4 +138,32 @@ const articles = {
 VanillaTilt.init(document.querySelector(".menu a"), {
     max: 80,
     speed: 600
+});
+
+
+const scrollNavBtn = document.getElementsByClassName('scroll-nav-btn');
+const Nav = document.getElementById('navbar');
+
+
+let show = false;
+scrollNavBtn[0].addEventListener('click', () => {
+        if(show){
+            scrollNavBtn[0].innerHTML = `<span class="material-symbols-outlined">close</span>`
+            Nav.style = "display: flex";
+        }
+        else{
+            scrollNavBtn[0].innerHTML = `<span class="material-symbols-outlined">menu</span>`
+            Nav.style = "display: none";
+        }
+        show = show ? false : true;
+
+})
+
+addEventListener('resize', (e) => {
+    if(e.target.innerWidth > 1000){
+        Nav.style = "display: block";
+    }
+    else{
+        Nav.style = "display: none";
+    }
 });

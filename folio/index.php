@@ -11,6 +11,7 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
     <script src="https://kit.fontawesome.com/6d9cc71036.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./data/img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body id="main">
 <!-- nav -->
