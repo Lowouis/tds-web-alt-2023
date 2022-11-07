@@ -99,7 +99,7 @@
 				</div>
 			</div>
 
-            <div class="cell"  onclick="location.href='../todolist_/index.php';">
+            <div class="cell"  onclick="location.href='../todolist/index.php';">
                 <h3 href="#">ToDo Liste</h3>
                 <div class="lang">
                     <a>Language(s):</a>
