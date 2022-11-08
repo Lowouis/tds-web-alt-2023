@@ -11,7 +11,7 @@
 	</head>
 <html>
 	<header>
-		<h1 id="name">ルイス・グリタ</h1>
+		<h1 id="name">Louis Gurita</h1>
 	</header>
 	<body>
 
