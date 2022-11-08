@@ -1,109 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
 
 html{
-	background:url("../data/bg.png") repeat-y black;
+	background:url("../data/bg.png") repeat-y rgba(33, 2, 22,1);
 	color: white;
 	font-family: 'Cabin', sans-serif;
 }
 
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+.line{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+h3{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-right: 40px;
+	width: 50%;
+}
+
+.line *{
+	text-align: left;
+}
+.lang{
+	width: 100%;
+}
+.cell{
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
+}
+.cells-stack{
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.03);
+}
+.title{
+	margin-bottom: 40px;
+	text-align: center;
+}
+.cell:hover{
+	transition: all .3s;
+	background-color: rgba(255,255,255,0.1);
+	cursor: pointer;
+}
+.cell:first-child:hover{
+	border-radius: 10px 10px 0 0;
+}
+.cell:last-child:hover{
+	border-radius: 0 0 10px 10px;
+}
+
+.container-body{
+	margin: 70px auto;
+	width: 60%;
+}
 #name{
-	position: fixed;
-	width: 500px;
-	height: 200px;
-	top: 13%;
-	left: 50%;
-	margin-top: -100px; /* Negative half of height. */
-	margin-left: -250px; /* Negative half of width. */
+	text-align: center;
+	width: auto;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 4rem;
 }
 
-
-h3{
-	margin-top: 5%;
-	width: 100%;
-	text-align: center;
-	cursor: pointer;
-	margin-bottom: 0;
-}
-
-.title{
-	margin: 1% auto;
-	width: 100%;
-	text-align: center;
-	cursor: pointer;
-}
-
-
-div{
-	color: white;
-}
-
-.cell
-{
-	padding: 0px 20px 10px 20px;
-	border: solid white 2px;
-	border-radius: 20px;
-	width: 20%;	
-	margin: 20px;
-	background-color: rgba(0,0,0,0.3);
-	box-shadow: 0px 0px 0px 0px #FFFFFF;
-	transition: box-shadow 300ms;
-}
-
-
-
-.cell:hover{ 
-	cursor: pointer;
-	box-shadow: 0px 0px 0px 6px #FFFFFF;
-	transition: box-shadow 300ms;
-}
-
-@keyframes cell-hover-ease{
-	from{box-shadow: 0px 0px 0px 0px #FFFFFF;}
-	to{}
-}
-.lang{
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-.lang-detail, .obj{
-	padding-left: 5px;
-}
-
-.lang a, .obj a{
-	margin: 50% 0 50% 0;
-}
-
-.cells-stack .cell{
-	width: 300px;
-}
-.container-body{
-	margin: 250px auto auto auto;
-}
-.cells-stack {
-	width: 100%;
-	display: inline-grid;
-	justify-items: center;
-	align-items: center;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-	grid-column-gap: 0;
-	grid-row-gap: 0;
-}
-
-@media screen and (max-width: 1340px){
-	.cells-stack {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(6, 1fr);
-
-	}
-}
-@media screen and (max-width: 659px){
-	.cells-stack {
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(6, 1fr);
-
+//media query
+@media screen and (max-width: 1000px) {
+	.container-body, .cells-stack{
+		width: 100%;
+		margin: 0;
 	}
 }
