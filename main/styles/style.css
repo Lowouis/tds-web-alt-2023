@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
 
 html{
-	background:url("../data/bg.png") repeat-y rgba(33, 2, 22,1);
+	background: rgba(13, 12, 12,1);
 	color: white;
 	font-family: 'Cabin', sans-serif;
 }
@@ -69,7 +69,6 @@ h3{
 	font-size: 4rem;
 }
 
-//media query
 @media screen and (max-width: 1000px) {
 	.container-body, .cells-stack{
 		width: 100%;
