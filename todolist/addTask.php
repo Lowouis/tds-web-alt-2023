@@ -7,8 +7,6 @@ if(isset($_SESSION['task_list']) && $_POST['add-task'] != ""){
 
 }
 
-
-
 header('Location: body.php');
 
 ?>

@@ -1,9 +1,17 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
-session_start();
 
-if(!session_start()){
-    $_SESSION['task_list'] = ["Pomme", "Poire", "Banane"];
+$user = $_POST['user'] ?? false;
+
+if(!$user){
+    session_start(); 
+    $_SESSION['task_list'] = ["Pomme", "Poire", "Banane"];  
+    include 'body.php';
+}
+else{
+    header('Location: home.php');
 }
 
-include_once 'body.php';
+
+?>
+

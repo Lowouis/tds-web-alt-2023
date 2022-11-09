@@ -3,7 +3,13 @@ $json = file_get_contents('data.json');
 $json_data = json_decode($json,true);
 ?>
 
-<!-- <h1 class="position-absolute top-0 start-50 translate-middle-x">Liste de tâche</h1> -->
+<h1 class="position-absolute top-0 start-50 translate-middle-x">Bonjour</h1>
+
+<form action="logout.php" method="post">
+    <button class="btn btn-lg btn-danger position-absolute top-0 end-0" type="text">Log out</button>
+</form>
+
+
 <div class="mb-3 w-75 position-absolute top-0 start-50 translate-middle-x">
         <form action="addTask.php" method="post" autocomplete="off">
             <div class="d-flex flex-row">
