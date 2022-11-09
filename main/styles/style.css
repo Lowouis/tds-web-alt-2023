@@ -64,9 +64,16 @@ h3{
 }
 #name{
 	text-align: center;
-	width: auto;
+	width: 100%;
 	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 4rem;
+	font-size: 1rem;
+	color : rgba(255,255,255,0.5);
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0;
 }
 
 @media screen and (max-width: 1000px) {

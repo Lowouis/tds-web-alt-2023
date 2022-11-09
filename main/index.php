@@ -10,86 +10,88 @@
 		<link rel="icon" href="data/icon.png" type="image/icon type">
 	</head>
 <html>
-	<header>
-		<h1 id="name">Louis Gurita</h1>
-	</header>
+
 	<body>
 
 
-<div class="container-body">
-		<h1 class="title">Programme du développement Web</h1>
-		<div class="cells-stack">
+		<div class="container-body">
+				<h1 class="title">Programme du développement Web</h1>
+				<div class="cells-stack">
 
-			<div class="cell" onclick="window.location='https://google.com';">
-				<h3 href="https://google.fr">Pâte à crèpe</h3>
-				<div class="lang">
-					<a>Language(s): HTML, CSS</a>
+					<div class="cell" onclick="window.location='https://google.com';">
+						<h3 href="https://google.fr">Pâte à crèpe</h3>
+						<div class="lang">
+							<a>Language(s): HTML, CSS</a>
+						</div>
+					</div>
+					<div class="cell" onclick="window.location='http://google.com';">
+						<h3 href="https://google.fr">Mention Légale</h3>
+						<div class="lang">
+							<a>Languages:</a>
+							<a class="lang-detail">HTML, CSS</a>
+						</div>
+					</div>
+					<div class="cell" onclick="window.location='http://google.com';">
+						<h3 href="https://google.fr">Status Juridiques</h3>
+						<div class="lang">
+							<a>Languages:</a>
+							<a class="lang-detail">HTML, CSS</a>
+						</div>
+					</div>
+					<div class="cell" onclick="window.location='../webarena/web-arena.html';">
+						<h3 href="https://google.fr">Web Arena</h3>
+						<div class="lang">
+							<a>Languages:</a>
+							<a class="lang-detail">HTML, CSS</a>
+						</div>
+					</div>
+					<div class="cell" onclick="window.location='../form/form.html';">
+						<h3 href="#">Formulaire</h3>
+						<div class="lang">
+							<a>Languages:</a>
+							<a class="lang-detail">HTML, CSS, PHP</a>
+						</div>
+					</div>
+					<div class="cell" onclick="window.location='../gridgenerator/index.php';">
+						<h3 href="#">TD2</h3>
+						<div class="lang">
+							<a>Languages:</a>
+							<a class="lang-detail">HTML, CSS, PHP</a>
+						</div>
+					</div>
+					<div class="cell" onclick="window.location='../folio/index.php';">
+						<h3 href="#">Porfolio</h3>
+						<div class="lang">
+							<a>Languages:</a>
+							<a class="lang-detail">HTML, CSS, JS</a>
+						</div>
+					</div>
+					<div class="cell" onclick="location.href='https://first-react-project-todolist.vercel.app/';">
+						<h3 href="#">Todo</h3>
+						<div class="lang">
+							<a>Languages:</a>
+							<a class="lang-detail">JSX, REACT, CSS</a>
+						</div>
+					</div>
+					<div class="cell"  onclick="location.href='https://netflix-clone-8bb18.web.app/';">
+						<h3 href="#">Netflix Clone</h3>
+						<div class="lang">
+							<a>Languages:</a>
+							<a class="lang-detail">JSX, REACT, CSS</a>
+						</div>
+					</div>
+					<div class="cell"  onclick="location.href='../todolist/index.php';">
+						<h3 href="#">Todo</h3>
+						<div class="lang">
+							<a>Languages:</a>
+							<a class="lang-detail">PHP, BOOTSTRAP</a>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="cell" onclick="window.location='http://google.com';">
-				<h3 href="https://google.fr">Mention Légale</h3>
-				<div class="lang">
-					<a>Languages:</a>
-					<a class="lang-detail">HTML, CSS</a>
-				</div>
-			</div>
-			<div class="cell" onclick="window.location='http://google.com';">
-				<h3 href="https://google.fr">Status Juridiques</h3>
-				<div class="lang">
-					<a>Languages:</a>
-					<a class="lang-detail">HTML, CSS</a>
-				</div>
-			</div>
-			<div class="cell" onclick="window.location='../webarena/web-arena.html';">
-				<h3 href="https://google.fr">Web Arena</h3>
-				<div class="lang">
-					<a>Languages:</a>
-					<a class="lang-detail">HTML, CSS</a>
-				</div>
-			</div>
-			<div class="cell" onclick="window.location='../form/form.html';">
-				<h3 href="#">Formulaire</h3>
-				<div class="lang">
-					<a>Languages:</a>
-					<a class="lang-detail">HTML, CSS, PHP</a>
-				</div>
-			</div>
-			<div class="cell" onclick="window.location='../gridgenerator/index.php';">
-				<h3 href="#">TD2</h3>
-				<div class="lang">
-					<a>Languages:</a>
-					<a class="lang-detail">HTML, CSS, PHP</a>
-				</div>
-			</div>
-			<div class="cell" onclick="window.location='../folio/index.php';">
-				<h3 href="#">Porfolio</h3>
-				<div class="lang">
-					<a>Languages:</a>
-					<a class="lang-detail">HTML, CSS, JS</a>
-				</div>
-			</div>
-			<div class="cell" onclick="location.href='https://first-react-project-todolist.vercel.app/';">
-				<h3 href="#">Todo</h3>
-				<div class="lang">
-					<a>Languages:</a>
-					<a class="lang-detail">JSX, REACT, CSS</a>
-				</div>
-			</div>
-			<div class="cell"  onclick="location.href='https://netflix-clone-8bb18.web.app/';">
-				<h3 href="#">Netflix Clone</h3>
-				<div class="lang">
-					<a>Languages:</a>
-					<a class="lang-detail">JSX, REACT, CSS</a>
-				</div>
-			</div>
-            <div class="cell"  onclick="location.href='../todolist/index.php';">
-                <h3 href="#">Todo</h3>
-                <div class="lang">
-                    <a>Languages:</a>
-                    <a class="lang-detail">PHP, BOOTSTRAP</a>
-                </div>
-            </div>
 		</div>
-</div>
+		<footer>
+				<a id="name">Louis Gurita</a>
+		</footer>
 	</body>
+
 </html>

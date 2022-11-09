@@ -1,11 +1,14 @@
 <?php
 
+session_start();
 
-function rmTask():void{
-    if(isset($_POST["rm-task"])){
-        $file = __DIR__ . DIRECTORY_SEPARATOR . "data" . DIRECTORY_SEPARATOR . $_POST['compteur'] . '-'.$_POST["rm-task"] . ".txt";
-        unlink($file);
-    }
-}
-rmTask();
-include_once "index.php";
+
+
+unset($_SESSION["task_list"][intval($_POST['rm-task'])]);
+var_dump($_SESSION["task_list"]);
+
+
+header('Location: body.php');
+
+
+?>

@@ -1,10 +1,9 @@
 <?php
+// error_reporting(E_ERROR | E_PARSE);
+session_start();
 
-
-include_once "header.php";
-
-if(session_start()){
-    include_once 'todo.php';
+if(!session_start()){
+    $_SESSION['task_list'] = ["Pomme", "Poire", "Banane"];
 }
 
-include_once "footer.php";
+include_once 'body.php';
