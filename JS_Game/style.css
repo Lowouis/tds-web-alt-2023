@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+:root {
+    --form-control-color: rebeccapurple;
+  }
+
+
+*{
+    font-family: 'Jost', sans-serif;
+}
+
+#title{
+    text-align: center;
+    font-size: 3rem;
+}

@@ -24,10 +24,10 @@ $json_data = json_decode($json,true);
     <div class=" m-2 p-2 mb-2 rounded">
         <?php foreach($_SESSION["task_list"] as $index => $task):?>
 
-                <div class="row sm m-3 input-group mb-2">
+                <div class="row sm m-3 input-group mb-2 table table-hover">
                     <?php if(isset($_SESSION['edit-index']) && $index === intval($_SESSION['edit-index']) and $_SESSION['edit']):?>
-                    <form class="col-9" action="ChangeTask.php" method="post">
-                        <input name="end_editing" class="form-control align-self-sm-center col-9" value="<?php echo $task ?>">
+                    <form class="col-9 d-flex" action="ChangeTask.php" method="post">
+                        <input name="end_editing" class="form-control form-control-lg" value="<?php echo $task ?>">
                     </form>
                     <?php else:?>
                     <h4 class="align-self-sm-center col-9"><?php echo $task ?></h4>
