@@ -7,9 +7,158 @@
 
 *{
     font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: rgb(14,17,17);
+
 }
 
 #title{
     text-align: center;
     font-size: 3rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.container{
+    display:flex;
+    width: 600px;
+    margin: 0 auto;
+    height: 900px;
+
+
+}
+#S_right{
+    position: relative;
+    right: 0;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 0 10px 10px 0;
+
+}
+#S_left{
+    position: relative;
+    left: 0;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 10px 0 0 10px;
+    border-right: solid 2px rgba(255,255,255,.2);
+}
+.w-200{
+    width:200px;
+}
+
+.w-600{
+    width:600px;
+}
+.box{
+    height: 800px;
+
+}
+#answer{
+    height: 85px;
+    margin: 20px auto;
+    background-color: rgba(255,255,255,.1);
+}
+
+.btn{
+    outline: none;
+    border: none;
+    background-color: #FFECEF;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    transition: all .3s;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.btn:hover{
+    transition: all .3s;
+    background-color: #FFCACA;
+    cursor: pointer;
+}
+.w-150{
+    width: 150px;
+}
+.b-10{
+    border-radius: 10px;
+}
+.m5{
+    margin: 5px;
+}
+
+.indicator{
+    outline: none;
+    padding: 10px;
+    border-radius: 60px;
+    background-color: rgba(255,255,255,.1);
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+.selector{
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 60px;
+    background-color: rgba(255,255,255,1);
+    width: 25px;
+    height: 25px;
+}
+.low-border{
+    border: 2px solid white !important;
+}
+.low-op{
+    opacity: .5;
+    border:none !important;
+}
+.m20{
+    margin: 23px 30px;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.try{
+    margin: 25px;
+}
+.hidden{
+    display: none;
+}
+
+.active{
+    background-color: rgba(255,255,255,1);
+}
+
+
+
+/* Color classes */
+
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.violet{
+    background-color: violet;
+}
+.black{
+    background-color: black;
+}
+
+
+.hover:hover{
+    opacity: 1;
+    cursor: pointer;
 }

@@ -87,6 +87,13 @@
 							<a class="lang-detail">PHP, BOOTSTRAP</a>
 						</div>
 					</div>
+                    <div class="cell"  onclick="location.href='../JS_Game/index.php';">
+                        <h3 href="#">MASTERMIND</h3>
+                        <div class="lang">
+                            <a>Languages:</a>
+                            <a class="lang-detail">PHP,CSS,JS</a>
+                        </div>
+                    </div>
 				</div>
 		</div>
 		<footer>
