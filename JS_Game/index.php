@@ -74,6 +74,11 @@
             </div>
         </div>
     </div>
+    <div class="fw flex-center">
+        <button id="submit" class="btn w-150 b-10 ">JOUER</button>
+    </div>
+
+
 
 
 

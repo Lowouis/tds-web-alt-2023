@@ -9,7 +9,12 @@
     font-family: 'Jost', sans-serif;
     margin: 0;
     padding: 0;
-
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body{
@@ -28,9 +33,12 @@ body{
     display:flex;
     width: 600px;
     margin: 0 auto;
-    height: 900px;
+    height: 800px;
 
 
+}
+.fw{
+    width: 100% !important;
 }
 #S_right{
     position: relative;
@@ -87,6 +95,11 @@ body{
 }
 .m5{
     margin: 5px;
+}
+#submit{
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(232,232,232,0.11);
+    color: white;
 }
 
 .indicator{
