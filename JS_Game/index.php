@@ -9,7 +9,18 @@
     <title>MASTERMIND</title>
 </head>
 <body>
-
+    <div class="confirmWin hidden">
+        <div class="confirmBox">
+            <h2>Bravo, vous avez gagner !</h2>
+            <button id="reload" class="btn b-10 m5 ">Check moi ça ! La rafale</button>
+        </div>
+    </div>
+    <div class="confirmLoose hidden">
+        <div class="confirmBox">
+            <h2>Dommage, vous avez perdu !</h2>
+            <button id="reload" class="btn b-10 m5 ">Calice de tabarnak ! </button>
+        </div>
+    </div>
     <h1 id="title">MASTERMIND</h1>
     <div id="answer" class="w-200 b-10">
         <button id="toggleShow" class="btn">SHOW</button>
@@ -23,7 +34,7 @@
     <div class="container">
         <div id="S_left" class="box w-150 b-10-3 b-10-0">
             <?php for($i=0;$i < 7 ; $i++): ?>
-            <div class="try">
+            <div class="try helper">
                 <div class="inline flex-center ">
                     <button class="indicator m5 round"></button>
                     <button class="indicator m5 round"></button>

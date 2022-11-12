@@ -17,6 +17,35 @@
     user-select: none;
 }
 
+
+.confirmWin, .confirmLoose{
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+}
+.confirmBox{
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,255.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: black 0px 0px 10px;
+}
+.true{
+    background-color: black !important;
+}
+.almost {
+    background-color: #FFFFFF !important;
+}
 body{
     background: rgb(14,17,17);
 
@@ -141,6 +170,7 @@ body{
 }
 .hidden{
     display: none;
+    transition: all .2s;
 }
 
 .active{

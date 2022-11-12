@@ -6,25 +6,53 @@ let readyToPlay = false;
 let playedColor = null;
 let playedPos = null;
 let tries = document.getElementById('S_right').children.length - 2;
-
-
-
-
+let helper = [];
 randomAnswer();
 setAnswer(answer);
 toggleShow();
 
+//TOOLS & UTILS
+const short = (list)=> {
+    const cp = list
+    const shorted = [];
+    for(let j = 1 ; j <= 4 ; j++){
+        for(let i = 0 ; i < 4 ; i++){
+            if(cp[i][1] === j){
+                shorted.push(cp[i]);
+            }
+        }
+    }
+    return shorted;
+}
+
+let shortedAnswer = short(answer);
+
 addEventListener('click', (event) => {
     playedColor = selectColor(event.target);
     playedPos = parseInt(selectPos(event.target));
-
     setColorToButton();
     composePlay();
     togglePlay(event.target);
-
-
-
 });
+
+
+const fillFrontHelper = () => {
+    const childrenNode = document.getElementsByClassName('helper')[tries].children;
+    const helperElements = [];
+    for(let i = 0; i < childrenNode.length; i++){
+        helperElements.push(childrenNode[i].children[0])
+        helperElements.push(childrenNode[i].children[1])
+    }
+    for(let i = 0; i < helper.length; i++){
+        if(helper[i] === true){
+            helperElements[i].classList.add('true');
+        }
+        else if(helper[i] === null){
+            helperElements[i].classList.add('almost');
+        }
+    }
+
+};
 
 
 const checkResult = () => {
@@ -46,7 +74,6 @@ const composePlay = () => {
             play[playedPos-1][1] = playedPos;
         }
     }
-    console.log(play);
 };
 
 const hasColor = (target) => {
@@ -76,25 +103,88 @@ function toggleShow(){
 }
 
 const togglePlay = (target) => {
-    if(target.id === 'submit' && checkResult() && tries > 0){
+    if(target.id === 'submit' && checkResult() && tries >= 0){
         push();
-        reset();
+        almostWin();
+        fillFrontHelper();
+        if(winAble()){
+            console.log('zefdfsfds');
+            document.getElementsByClassName('confirmWin')[0].classList.remove('hidden');
+        }
+        if (tries === 0 && !winAble()){
+            document.getElementsByClassName('confirmLoose')[0].classList.remove('hidden');
+        }
         tries -= 1;
-        console.log("SUBMITED");
+        reset();
     }
-    else if(!winAble() &&tries === 0){
-        gameOver();
+    if(target.id === 'reload'){
+        window.location.reload();
+        document.getElementsByClassName('confirmWin')[0].classList.add('hidden');
+        document.getElementsByClassName('confirmLoose')[0].classList.add('hidden');
     }
-    console.log("NOT SUBMITED");
+
+
 }
 
-const winAble = () => {};
+const winAble = () => {
+    const childrenNode = document.getElementsByClassName('helper')[tries].children;
+    const helperElements = [];
+    for(let i = 0; i < childrenNode.length; i++){
+        helperElements.push(childrenNode[i].children[0])
+        helperElements.push(childrenNode[i].children[1])
+    }
+    for(let i = 0 ; i < helperElements.length ; i++){
+        if(helperElements[i].classList.contains('almost')){
+            return false;
+        }
+    }
+    return true;
+};
 const gameOver = () => {};
+const splitForColor = (list) => {
+    const color = [];
+    for(let i = 0; i < list.length; i++){
+        color.push(list[i][0]);
+    }
+    return color;
+};
+const splitForPos= (list) => {
+    const pos = [];
+    for(let i = 0; i < list.length; i++){
+        pos.push(list[i][0]);
+    }
+    return pos;
+};
+
+const almostWin = () => {
+    const shortedPlay = short(play);
+    const colorAnswer = splitForColor(shortedAnswer);
+    const colorPlay = splitForColor(shortedPlay);
+    console.log(shortedAnswer , shortedPlay)
+    for(let i = 0 ; i < shortedPlay.length ; i++){
+            if((shortedPlay[i][0] === shortedAnswer[i][0]) && (shortedPlay[i][1] === shortedAnswer[i][1])){
+                helper.push(true);
+            }
+            else{
+                if(colorPlay[i] === colorAnswer.find((element) => (element === colorPlay[i]))){
+                    helper.push(null);
+                    colorAnswer.slice(i)
+                    colorPlay.slice(i)
+                }
+            }
+
+        }
+
+    console.log(helper);
+};
+
+
 
 const push = () => {
     const targeted = document.getElementById('S_right').children[tries].children[0];
     changeColorOfLine(targeted);
 }
+
 
 
 
@@ -186,6 +276,7 @@ const reset = () => {
     play = [[null,null],[null,null],[null,null],[null,null]];
     playedColor = null;
     playedPos = null;
+    helper = [];
 };
 
 // COMPUTER BACK END
