@@ -28,12 +28,19 @@ const short = (list)=> {
 let shortedAnswer = short(answer);
 
 addEventListener('click', (event) => {
+    confirmRules(event.target);
     playedColor = selectColor(event.target);
     playedPos = parseInt(selectPos(event.target));
     setColorToButton();
     composePlay();
     togglePlay(event.target);
 });
+
+const confirmRules = (target) => {
+    if(target.id === 'ok'){
+        document.getElementsByClassName('rules')[0].classList.add('hidden');
+    }
+};
 
 
 const fillFrontHelper = () => {
@@ -108,7 +115,6 @@ const togglePlay = (target) => {
         almostWin();
         fillFrontHelper();
         if(winAble()){
-            console.log('zefdfsfds');
             document.getElementsByClassName('confirmWin')[0].classList.remove('hidden');
         }
         if (tries === 0 && !winAble()){
@@ -127,20 +133,15 @@ const togglePlay = (target) => {
 }
 
 const winAble = () => {
-    const childrenNode = document.getElementsByClassName('helper')[tries].children;
-    const helperElements = [];
-    for(let i = 0; i < childrenNode.length; i++){
-        helperElements.push(childrenNode[i].children[0])
-        helperElements.push(childrenNode[i].children[1])
-    }
-    for(let i = 0 ; i < helperElements.length ; i++){
-        if(helperElements[i].classList.contains('almost')){
+    const shortedPlay = short(play);
+    for(let i = 0 ; i < shortedAnswer.length ; i++){
+        if(shortedPlay[i][0] !== shortedAnswer[i][0]){
             return false;
         }
     }
     return true;
 };
-const gameOver = () => {};
+
 const splitForColor = (list) => {
     const color = [];
     for(let i = 0; i < list.length; i++){
@@ -157,25 +158,31 @@ const splitForPos= (list) => {
 };
 
 const almostWin = () => {
-    const shortedPlay = short(play);
-    const colorAnswer = splitForColor(shortedAnswer);
-    const colorPlay = splitForColor(shortedPlay);
-    console.log(shortedAnswer , shortedPlay)
-    for(let i = 0 ; i < shortedPlay.length ; i++){
-            if((shortedPlay[i][0] === shortedAnswer[i][0]) && (shortedPlay[i][1] === shortedAnswer[i][1])){
+    let cpPlay = play;
+    console.log(play)
+    let cpAnswer = answer;
+    for(let i = 0 ; i < play.length ; i++){
+        for(let j = 0 ; j < answer.length ; j++){
+            console.log(cpPlay.length);
+            console.log(cpAnswer.length);
+
+            if((cpPlay[i][0] === cpAnswer[j][0]) && (cpPlay[i][1] === cpAnswer[j][1])){
                 helper.push(true);
+                cpPlay = cpPlay.slice(i)
+                cpAnswer = cpAnswer.slice(j)
+                console.log('win')
+
             }
-            else{
-                if(colorPlay[i] === colorAnswer.find((element) => (element === colorPlay[i]))){
-                    helper.push(null);
-                    colorAnswer.slice(i)
-                    colorPlay.slice(i)
-                }
+            else if((cpPlay[i][0] === cpAnswer[j][0]) && (cpPlay[i][1] !== cpAnswer[j][1])){
+                helper.push(null);
+                cpPlay = cpPlay.slice(i)
+                cpAnswer = cpAnswer.slice(j)
+                console.log('almost')
             }
 
-        }
+    }
+    }
 
-    console.log(helper);
 };
 
 
@@ -289,8 +296,11 @@ function randomAnswer(){
 }
 function setAnswer(answer){
     answer.forEach((index) => {
-        let answerTag = document.getElementById('answer_box').children[index[1]-1];
-        answerTag.classList.add(index[0]);
+        let clickAnswer = document.getElementsByClassName('answer_box')[0].children[index[1]-1];
+        let LooseAnswer = document.getElementsByClassName('answer_box')[1].children[index[1]-1];
+        clickAnswer.classList.add(index[0]);
+        LooseAnswer.classList.add(index[0]);
+
     });
 }
 function pickRandPlacement(){

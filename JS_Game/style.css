@@ -18,7 +18,7 @@
 }
 
 
-.confirmWin, .confirmLoose{
+.confirmWin, .confirmLoose, .rules{
     z-index: 1;
     position: fixed;
     background-color: rgba(0,0,0,0.5);
@@ -28,17 +28,27 @@
     width: 100%;
     transition: all .2s;
 }
-.confirmBox{
+.confirmBox, .rulesBox, .rulesBox{
     z-index: 100;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: rgba(255,255,255,255.7);
+    background: rgb(255,255,255);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: black 0px 0px 10px;
+}
+
+.rulesBox{
+    width: 700px;
+    height: 404px;
+    overflow: auto;
+}
+
+.text-l{
+    text-align: left;
 }
 .true{
     background-color: black !important;
@@ -177,7 +187,13 @@ body{
     background-color: rgba(255,255,255,1);
 }
 
-
+.bg-light{
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.1);
+    width: min-content;
+    padding: 10px;
+    margin: 0 auto;
+}
 
 /* Color classes */
 
