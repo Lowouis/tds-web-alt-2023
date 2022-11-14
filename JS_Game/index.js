@@ -60,7 +60,7 @@ const fillFrontHelper = () => {
     }
 
 };
-
+console.log(answer)
 
 const checkResult = () => {
     for (let i = 0; i < play.length; i++) {
@@ -102,7 +102,7 @@ function toggleShow(){
         }
         else if(event.target.innerText === "HIDE"){
             event.target.innerText = "SHOW";
-            document.getElementById('answer_box').classList.add('hidden');;
+            document.getElementById('answer_box').classList.add('hidden');
         }
     });
 
@@ -112,7 +112,7 @@ function toggleShow(){
 const togglePlay = (target) => {
     if(target.id === 'submit' && checkResult() && tries >= 0){
         push();
-        almostWin();
+        //almostWin();
         fillFrontHelper();
         if(winAble()){
             document.getElementsByClassName('confirmWin')[0].classList.remove('hidden');
@@ -149,49 +149,60 @@ const splitForColor = (list) => {
     }
     return color;
 };
-const splitForPos= (list) => {
+const splitForPos = (list) => {
     const pos = [];
     for(let i = 0; i < list.length; i++){
         pos.push(list[i][0]);
     }
     return pos;
 };
-
+short(answer)
 const almostWin = () => {
-    let cpPlay = play;
-    console.log(play)
-    let cpAnswer = answer;
-    for(let i = 0 ; i < play.length ; i++){
-        for(let j = 0 ; j < answer.length ; j++){
-            console.log(cpPlay.length);
-            console.log(cpAnswer.length);
+    const colorLastVisitedIndex = [['blue',0],['green',0],['yellow',0],['violet',0],['red',0],['black',0]]
+    let AnswerShort = splitForColor(short(answer))
+    let PlayShort  = splitForColor(short(play))
+    for(let i = 0 ; i < AnswerShort.length ; i++){
+        if(PlayShort[i] === AnswerShort[i]){
+            helper.push(true);
+        }
+        else{
+            let lastIndex = findIndexOfColor(colorLastVisitedIndex, AnswerShort[i])
+            for(let j = lastIndex ; j < PlayShort.length ; j++){
+                if(PlayShort[j] === AnswerShort[i]){
 
-            if((cpPlay[i][0] === cpAnswer[j][0]) && (cpPlay[i][1] === cpAnswer[j][1])){
-                helper.push(true);
-                cpPlay = cpPlay.slice(i)
-                cpAnswer = cpAnswer.slice(j)
-                console.log('win')
-
-            }
-            else if((cpPlay[i][0] === cpAnswer[j][0]) && (cpPlay[i][1] !== cpAnswer[j][1])){
-                helper.push(null);
-                cpPlay = cpPlay.slice(i)
-                cpAnswer = cpAnswer.slice(j)
-                console.log('almost')
+                }
             }
 
     }
     }
 
-};
+
+}
+
+function findIndexOfColor(list,color){
+    list.find((tuple,index) => {
+        if(tuple[0] === color){
+            return index;
+        }
+    })
+}
 
 
+function removeA(arr) {
+    let what, a = arguments, L = a.length, ax;
+    while (L > 1 && arr.length) {
+        what = a[--L];
+        while((ax= arr.indexOf(what)) !== -1){
+            arr.splice(ax, 1);
+        }
+    }
+    return arr;
+}
 
 const push = () => {
     const targeted = document.getElementById('S_right').children[tries].children[0];
     changeColorOfLine(targeted);
 }
-
 
 
 

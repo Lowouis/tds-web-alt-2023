@@ -23,7 +23,7 @@
                     <li>Une bille blanche pour une bonne couleur mais un mauvais placement</li>
                 </ul>
         </ul>
-        <h3 class="text-l m5">Après 7 essaies sans trouver vous aurez perdu, et vous pourrez re-essayer de jouer une nouvelle partie</h3>
+        <h3 class="text-l m5">Après 7 essais sans trouver vous aurez perdu, et vous pourrez re-essayer de jouer une nouvelle partie</h3>
         <button id="ok" class="btn b-10 ">Ok !</button>
     </div>
 </div>
