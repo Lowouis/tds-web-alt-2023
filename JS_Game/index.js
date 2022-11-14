@@ -112,7 +112,7 @@ function toggleShow(){
 const togglePlay = (target) => {
     if(target.id === 'submit' && checkResult() && tries >= 0){
         push();
-        //almostWin();
+        almostWin();
         fillFrontHelper();
         if(winAble()){
             document.getElementsByClassName('confirmWin')[0].classList.remove('hidden');
@@ -156,9 +156,8 @@ const splitForPos = (list) => {
     }
     return pos;
 };
-short(answer)
 const almostWin = () => {
-    const colorLastVisitedIndex = [['blue',0],['green',0],['yellow',0],['violet',0],['red',0],['black',0]]
+    let colorLastVisitedIndex = [['blue',0],['green',0],['yellow',0],['violet',0],['red',0],['black',0]]
     let AnswerShort = splitForColor(short(answer))
     let PlayShort  = splitForColor(short(play))
     for(let i = 0 ; i < AnswerShort.length ; i++){
@@ -169,22 +168,22 @@ const almostWin = () => {
             let lastIndex = findIndexOfColor(colorLastVisitedIndex, AnswerShort[i])
             for(let j = lastIndex ; j < PlayShort.length ; j++){
                 if(PlayShort[j] === AnswerShort[i]){
-
+                    helper.push(null);
+                    colorLastVisitedIndex[findIndexOfColor(colorLastVisitedIndex, AnswerShort[i][0])] = j;
+                    break;
                 }
             }
-
+        }
     }
-    }
-
-
+    return helper;
 }
 
 function findIndexOfColor(list,color){
-    list.find((tuple,index) => {
-        if(tuple[0] === color){
-            return index;
+    for(let i = 0 ; i < list.length;i++){
+        if(list[i][0] === color){
+            return i;
         }
-    })
+    }
 }
 
 
