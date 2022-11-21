@@ -28,5 +28,5 @@
 <script src="public/scripts/cursor_gradient.js"></script>
 <script src="public/scripts/menu.js"></script>
 <script src="public/scripts/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/less" ></script>
+<script src="https://cdn.jsdelivr.net/npm/less"></script>
 </html>
