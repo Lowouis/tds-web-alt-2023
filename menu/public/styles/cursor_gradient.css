@@ -8,8 +8,8 @@
 .cursor {
     z-index: 0;
     accent-color: #A374FF;
-    width: 600px;
-    height: 600px;
+    width: 1000px;
+    height: 1000px;
     border-radius: 1000px;
     border: 1px solid black;
     transition: all 200ms ease-out;

@@ -1,4 +1,4 @@
-<span class="resume-btn material-symbols-outlined">description</span>
+<span class="resume-btn material-symbols-outlined">draft</span>
 <span id="btn-menu" class="clickable-square material-symbols-outlined">menu</span>
 <div id="menu" class="menu-container hidden">
     <a id="nav_home">Home</a>
