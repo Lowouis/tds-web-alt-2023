@@ -12,6 +12,7 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
     <link rel="shortcut icon" href="./data/img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" type="text/css" href="styles/menu.css">
 </head>
 <body id="main">
 <!-- nav -->
@@ -20,7 +21,10 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
 <img id="gradient2" class="fixed-bg" src="./data/files/gradient.png">
 
 <!-- fixed components -->
-<?= include_once 'components.php' ?>
+<div id="fixed-components">
+    <?= include_once 'components.php' ?>
+</div>
+
 
 
 <!-- home page -->
@@ -42,4 +46,5 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
 
 <script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
 <script type="text/javascript" src="scripts/init.js"></script>
+<script type="text/javascript" src="scripts/menu.js"></script>
 </html>

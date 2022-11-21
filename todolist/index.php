@@ -11,6 +11,6 @@ if($user != ""){
     include 'body.php';
 }
 else{
-    header('Location: home.php');
+    header('Location: projets.php');
 }
 

@@ -169,8 +169,7 @@ const almostWin = () => {
             for(let j = lastIndex ; j < PlayShort.length ; j++){
                 if(PlayShort[j] === AnswerShort[i]){
                     helper.push(null);
-                    colorLastVisitedIndex[findIndexOfColor(colorLastVisitedIndex, AnswerShort[i][0])] = j;
-                    break;
+                    colorLastVisitedIndex[findIndexOfColor(colorLastVisitedIndex, AnswerShort[i][0])] = j+1;
                 }
             }
         }

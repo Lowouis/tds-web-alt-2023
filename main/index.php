@@ -39,7 +39,7 @@
 						</div>
 					</div>
 					<div class="cell" onclick="window.location='../webarena/web-arena.html';">
-						<h3 href="https://google.fr">Web Arena</h3>
+						<h3 href="https://google.fr">Web Arena</h3>![](../../../../AppData/Local/Temp/r4xkr231.bmp)
 						<div class="lang">
 							<a>Languages:</a>
 							<a class="lang-detail">HTML, CSS</a>

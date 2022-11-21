@@ -676,9 +676,11 @@ input:focus, textarea:focus{
 .fz-20{
     font-size: 25px !important;
 }
-
+#fixed-components{
+    display: initial;
+}
 /*  Responsive Design */
-@media only screen and (max-width: 1002px) {
+@media only screen and (max-width: 1000px) {
     :root{
         --p-size: 2rem;
         --title-color: #57EBFF;
@@ -691,6 +693,9 @@ input:focus, textarea:focus{
         --h4-size: 1.8rem;
         --h5-size: 1.4rem;
         --a-size: 4rem;
+    }
+    #fixed-components{
+        display: none;
     }
     .stick{
         width: 50px;
@@ -797,6 +802,9 @@ input:focus, textarea:focus{
     #navbar a{
         margin: 40px;
         font-size: 3rem;
+    }
+    section{
+        max-width: 100%;
     }
 
 }

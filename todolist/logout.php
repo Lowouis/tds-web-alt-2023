@@ -1,6 +1,6 @@
 <?php
 
 session_abort();
-header('Location: home.php');
+header('Location: projets.php');
 
 ?>

@@ -141,29 +141,13 @@ VanillaTilt.init(document.querySelector(".menu a"), {
 });
 
 
-const scrollNavBtn = document.getElementsByClassName('scroll-nav-btn');
-const Nav = document.getElementById('navbar');
 
-
-let show = false;
-scrollNavBtn[0].addEventListener('click', () => {
-        if(show){
-            scrollNavBtn[0].innerHTML = `<span class="material-symbols-outlined">close</span>`
-            Nav.style = "display: flex";
-        }
-        else{
-            scrollNavBtn[0].innerHTML = `<span class="material-symbols-outlined">menu</span>`
-            Nav.style = "display: none";
-        }
-        show = show ? false : true;
-
-})
 
 addEventListener('resize', (e) => {
-    if(e.target.innerWidth > 1000){
-        Nav.style = "display: block";
+    if(e.target.innerWidth <= 1000){
+        Nav.style = "display: none";
     }
     else{
-        Nav.style = "display: none";
+        Nav.style = "display: flex";
     }
 });

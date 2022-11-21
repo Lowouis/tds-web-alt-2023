@@ -13,7 +13,7 @@
     <div class="rulesBox">
         <h1 class="m5">Bienvenue dans le jeu MasterMind</h1>
         <h2 class="m5">Vous jouez contre l'ordinateur </h2>
-        <h2 class="m5 text-l">Régle</h2>
+        <h2 class="m5 text-l">Règles</h2>
         <ul class="m5 text-l">
             <h3>L'ordinateur va choisir une combinaison parmi 6 couleurs a 4 emplacement précis</h3>
             <h3>Vous aller avoir 7 essaies pour découvrir cette combinaison</h3>
