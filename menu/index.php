@@ -24,6 +24,7 @@
 
 </body>
 <!--scripts-->
+<script src="public/scripts/hue.js"></script>
 <script src="public/scripts/cursor_gradient.js"></script>
 <script src="public/scripts/menu.js"></script>
 <script src="public/scripts/index.js"></script>

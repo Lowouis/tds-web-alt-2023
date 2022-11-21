@@ -7,23 +7,20 @@
 
 .cursor {
     z-index: 0;
-    accent-color: #A374FF;
     width: 1000px;
     height: 1000px;
     border-radius: 1000px;
-    border: 1px solid black;
     transition: all 200ms ease-out;
     position: fixed;
     pointer-events: none;
     left: 0;
     top: 0;
     transform:  translate(calc(-50% + 15px), -50%);
-    opacity: .4;
-    background: hsla(44, 100%, 57%, 1);
-    background: radial-gradient(circle, hsla(44, 100%, 57%, 1) 0%, hsla(260, 100%, 73%, 1) 53%, hsla(0, 0%, 24%, 1) 100%);
-    background: -moz-radial-gradient(circle, hsla(44, 100%, 57%, 1) 0%, hsla(260, 100%, 73%, 1) 53%, hsla(0, 0%, 24%, 1) 100%);
-    background: -webkit-radial-gradient(circle, hsla(44, 100%, 57%, 1) 0%, hsla(260, 100%, 73%, 1) 53%, hsla(0, 0%, 24%, 1) 100%);
     filter: blur(100px);
+}
+
+canvas{
+    background:hsla(0,0%,0%,1);
 }
 
 
