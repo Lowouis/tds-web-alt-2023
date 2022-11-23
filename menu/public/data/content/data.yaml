@@ -1,0 +1,122 @@
+##########MENU###########
+-menu:
+    Home
+    nav_home
+    A propos
+    nav_propos
+    Projets
+    nav_projets
+    Experiences
+    nav_experience
+    Formations
+    nav_formation
+    Compétences
+    nav_competence
+    Contact
+    nav_contact
+
+
+##########VUES CONTENUS###########
+-home:
+    id:                     home
+    title:                  LOUIS GURITA
+    under_title:            APPRENTI DEVELOPPEUR APPLICATION CHEZ SAP LABS
+    text_content:           Après 3ans à l’université à y développer différents projets et y apprendre plusieurs languages et plusieurs
+                            concepts ainsi que des maths avancés, l’ensemble trop théorique ne m’attrayait plus autant et mon envie de rentrer dans
+                            le monde professionnelle, je décide alors en 2021 de faire une formation en développement en alternance, c’est pourquoi
+                            j’ai choisis de faire un BTS SIO. Sur ce site vous verrez mon parcours, mes expériences et mes projets.
+
+
+-propos:
+    id:                     propos
+    title:                  A PROPOS
+    text_content:           Après 3ans à l’université à y développer différents projets et y apprendre plusieurs languages et plusieurs
+                            concepts ainsi que des maths avancés, l’ensemble trop théorique ne m’attrayait plus autant et mon envie de rentrer dans
+                            le monde professionnelle, je décide alors en 2021 de faire une formation en développement en alternance, c’est pourquoi
+                            j’ai choisis de faire un BTS SIO. Sur ce site vous verrez mon parcours, mes expériences et mes projets.
+
+
+-experience:
+    id:                     experience
+    title:                  EXPERIENCE
+    -tabs:
+        -1:
+            -entreprise:    SAP Labs
+            -date:          2021 - 2022
+            -post:          Developpeur Application
+            -taches:        Développement d'une application web en ReactJS
+            -lieu:          Domicile
+        -2:
+            -entreprise:    Goclefcd
+            -date:          2020
+            -post:          Developpeur Application
+            -taches:        Développement d'une application web en ReactJS
+            -lieu:          Domicile
+-projets:
+    id:             projet
+    title:          PROJETS
+    -tabs:
+        -1:
+            -nom:           Algo A*
+            -date:          2021 - 2022
+            -content:       Developpeur Application
+            -button:        Développement d'une application web en ReactJS
+        -2:
+            -entreprise:    IA nim game
+            -date:          2020
+            -post:          Developpeur Application
+            -taches:        Développement d'une application web en ReactJS
+            -lieu:          Domicile
+
+-formation:
+    id:                     formation
+    title:                  FORMATIONS
+    -tabs:
+        -1:
+            -diplome:       BTS SIO
+            -date:          2021 - 2022
+            -enseigne:      Lieu d'enseignement
+            -lieu:          Lieu
+            -contenu:       Contenu de la formation
+        -2:
+            -diplome:       BTS SIO
+            -date:          2021 - 2022
+            -enseigne:      Lieu d'enseignement
+            -lieu:          Lieu
+            -contenu:       Contenu de la formation
+
+-competences:
+    id:                     competences
+    title:                  COMPETENCES
+    -tabs:
+        -1:
+            -titre:         Python
+            -text_content:  80
+            -illustrations:
+                ./public/data/content/illustrations/html.png
+                ./public/data/content/illustrations/html.png
+                ./public/data/content/illustrations/html.png
+                ./public/data/content/illustrations/html.png
+            -pourcentage:   80
+
+
+-contact:
+    id:                     contact
+    title:                  CONTACT
+    -champs:
+        -1:
+            -label:         Prénom
+            -balise:        textarea
+            -placeholder:   Entrez votre prénom
+            -type:          text
+        -2:
+            -label:         Prénom
+            -balise:        input
+            -placeholder:   Entrez votre prénom
+            -type:          text
+
+
+
+##########OTHERS PATHS###########
+-pp_path:
+    src: ../public/data/content/pp.jpg
