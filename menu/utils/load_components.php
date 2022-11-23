@@ -1,11 +1,6 @@
-<div id="loadPage" class="">
-    <img class="full-screen" src="./public/data/img/swscreen.png">
-</div>
+<div id="loadPage" class=""></div>
 <canvas id ='canv' class="blur cursor"></canvas>
-
-
-
-    <div class="rgpb__box">
+    <div id="rgpd" class="rgpb__box">
         <div class="f-col h-100">
             <img id="cookie_logo" class="relative_tr__logo" src="./public/data/img/cookies.png">
             <p class="rgpd__text">
@@ -16,8 +11,6 @@
                 <button class="rgpd__btn">Je refuse</button>
             </div>
         </div>
-
-
     </div>
 
 

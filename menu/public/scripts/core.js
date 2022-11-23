@@ -6,6 +6,7 @@ addEventListener('click', function(e){
     showContentPerk(e.target);
     //e.target.id.startsWith('skills_')
     console.log(e.target.id);
+    e.target.id === "cookie_enable" ? document.getElementById("rgpd").classList.add("hidden") : null;
     e.target.id.startsWith('card')?  expand(e.target.parentElement) : null;
     e.target.id.startsWith('tab')?  showOnChecked(e.target) : null;
     (exist(e.target.id) && previousVue !== e.target.id.replace('nav_','')) ? load(e.target) : null;

@@ -1,10 +1,9 @@
 <span id="btn-menu" class="clickable-square material-symbols-outlined">menu</span>
 <div id="menu" class="menu-container hidden">
-    <a id="nav_home">Home</a>
-    <a id="nav_propos">A propos</a>
-    <a id="nav_projets">Projets</a>
-    <a id="nav_experience">Expérience</a>
-    <a id="nav_formation">Formation</a>
-    <a id="nav_competences">Compétences</a>
-    <a id="nav_contact">Contact</a>
+    <?php
+    $data = yaml_parse_file("./public/data/content/data.yaml");
+    foreach ($data['menu'] as $key => $value){
+        echo '<a id="'.$value[1].'">'.$value[0].'</a>';
+    }
+?>
 </div>

@@ -1,5 +1,5 @@
 <?php
-
+$data = yaml_parse_file("./public/data/content/data.yaml");
 ?>
 
 <!doctype html>
@@ -9,28 +9,32 @@
     <title>LOUIS GURITA</title>
     <!--styles-->
     <link rel="stylesheet" type="text/css" href="public/styles/cursor_gradient.css">
-    <link rel="stylesheet/less" type="text/css" href="public/styles/menu.scss">
+    <link rel="stylesheet" type="text/css" href="./public/styles/menu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--captcha-->
 </head>
 <body>
-    <!--utils-->
-    <?php include_once "utils/load_components.php" ?>
-    <?php include_once "utils/menu.php" ?>
-    <!--vues-->
-    <?php include_once "vues/home.php"?>
-    <?php include_once "vues/propos.php"?>
-    <?php include_once "vues/projets.php" ?>
-    <?php include_once "vues/experience.php" ?>
-    <?php include_once "vues/formation.php" ?>
-    <?php include_once "vues/contact.php" ?>
-    <?php include_once "vues/competence.php" ?>
+
+    <?php
+    //utils
+    include_once "utils/load_components.php";
+    include_once "utils/menu.php";
+    //vues
+    //include_once "vues/home.php";
+    //include_once "vues/propos.php";
+    //include_once "vues/projets.php";
+    include_once "vues/experience.php";
+    include_once "vues/formation.php";
+    include_once "vues/contact.php";
+    include_once "vues/competence.php";
+    ?>
+
+
 
 </body>
 <!--scripts-->
 <script src="public/scripts/hue.js"></script>
-<script src="public/scripts/cursor_gradient.js"></script>
+<script src="public/scripts/gradient_crs.js"></script>
 <script src="public/scripts/menu.js"></script>
-<script src="public/scripts/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/less"></script>
+<script src="public/scripts/core.js"></script>
 </html>

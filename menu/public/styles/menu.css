@@ -42,7 +42,7 @@ textarea, input{
     opacity: .2;
     color: wheat;
 }
-.input_contact[type=text]{
+.input_contact[type=text], .input_contact[type=email]{
     font-size: 30px;
     color: wheat;
     padding: 10px;
@@ -358,6 +358,7 @@ body{
     height: 100%;
 }
 #loadPage{
+    background-color: #8d74b9;
     position: absolute;
     z-index: 1000;
     top: -3000px;
@@ -368,8 +369,7 @@ body{
     justify-content: center;
     align-items: center;
     opacity: 1;
-    transition: all 1s ease-in-out;
-    filter: blur(50px);
+    transition: all 0.75s cubic-bezier(.71,1,.33,1) 300ms;
 }
 
 .perk_load{

@@ -1,14 +1,19 @@
-<div id="propos" class="full-hidden">
+<?php
+$data = yaml_parse_file("./public/data/content/data.yaml");
+$propos = $data['propos'];
+?>
+
+<div id="<?php echo $propos['id'] ?>" class="full-hidden">
     <div id="title_home_container">
-        <h1>A PROPOS</h1>
+        <h1><?php echo $propos['title']?></h1>
         <div class="contact__container">
             <div class="about-text">
-                <p >Je suis apprenti chez SAP LABS à Caen en France, ancien étudiant universitaire en licence d’informatique et maintenant en BTS SIO option développement, je suis chez SAP LABS comme developpeur logiciel & support IT, mes taches à ce jours sont d’apprendre le framework CAP BTS de SAP pour ensuite participer au projet interne sur le cloud, et aussi m’occuper des différents probleme liée au materiels informatiques.</p>
+                <p><?php echo $propos['text_content']?></p>
             </div>
 
         </div>
         <div class="f-row">
-            <img class="pp_style" src="./public/data/img/pp.jpg">
+            <img class="pp_style" src="<?php echo $data['img_src'][0]?>">
         </div>
     </div>
 
