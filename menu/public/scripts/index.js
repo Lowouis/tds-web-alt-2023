@@ -1,10 +1,30 @@
-const vues = ["nav_home", "nav_projets", "nav_experience", "nav_formation", "nav_competences", "nav_contact"];
+const vues = ["nav_home","nav_propos", "nav_projets", "nav_experience", "nav_formation", "nav_competences", "nav_contact"];
 let previousVue = "home"
+let oldTabsPerk = "tabs_content_1";
+let oldTabsPerkContent ="";
 addEventListener('click', function(e){
+    showContentPerk(e.target);
+    //e.target.id.startsWith('skills_')
+    console.log(e.target.id);
     e.target.id.startsWith('card')?  expand(e.target.parentElement) : null;
     e.target.id.startsWith('tab')?  showOnChecked(e.target) : null;
     (exist(e.target.id) && previousVue !== e.target.id.replace('nav_','')) ? load(e.target) : null;
 });
+
+const showContentPerk = (target) => {
+    const index = target.id.replace('skills_','');
+    const content = document.getElementById(`tabs_content_${index}`);
+    if(content !== null){
+        oldTabsPerkContent = document.getElementById(`${oldTabsPerk}`);
+        oldTabsPerkContent.classList.add("full-hidden");
+        content.classList.remove("full-hidden");
+        oldTabsPerk = `tabs_content_${index}`;
+        console.log(oldTabsPerkContent);
+    }
+
+}
+
+
 
 const showOnChecked = (target) =>{
     const content = target.parentElement.parentElement.children[1];

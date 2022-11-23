@@ -1,33 +1,15 @@
-<div id="contact" class="full-hidden">
+<div id="propos" class="full-hidden">
     <div id="title_home_container">
-        <h1>CONTACT</h1>
+        <h1>A PROPOS</h1>
         <div class="contact__container">
-            <form action="?" method="POST">
-                <div class="f-col">
-                    <label class="label_contact">Prénom</label>
-                    <input class="input_contact" type="text" name="contact" placeholder="Entrez votre prénom">
-                </div>
+            <div class="about-text">
+                <p >Je suis apprenti chez SAP LABS à Caen en France, ancien étudiant universitaire en licence d’informatique et maintenant en BTS SIO option développement, je suis chez SAP LABS comme developpeur logiciel & support IT, mes taches à ce jours sont d’apprendre le framework CAP BTS de SAP pour ensuite participer au projet interne sur le cloud, et aussi m’occuper des différents probleme liée au materiels informatiques.</p>
+            </div>
 
-                <div class="f-col">
-                    <label class="label_contact">Nom</label>
-                    <input class="input_contact" type="text" name="contact" placeholder="Entrez votre nom">
-                </div>
-
-                <div class="f-col">
-                    <label class="label_contact">Adresse mail</label>
-                    <input class="input_contact" type="text" name="contact" placeholder="Entrez votre adresse mail">
-                </div>
-
-                <div class="f-col">
-                    <label class="label_contact">Message</label>
-                    <textarea class="input_contact" type="text" name="contact" placeholder="Entrez votre message"></textarea>
-                </div>
-
-                <div class="f-row">
-                    <span class="material-symbols-outlined send_btn">send<button hidden name="contact" type="submit"></button></span>
-
-                </div>
-            </form>
+        </div>
+        <div class="f-row">
+            <img class="pp_style" src="./public/data/img/pp.jpg">
         </div>
     </div>
+
 </div>

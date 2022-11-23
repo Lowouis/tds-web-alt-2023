@@ -4,11 +4,17 @@
     z-index: 10;
 
 }
+.pp_style{
+    z-index: 10;
+    width: 70%;
+    border-radius: 1000px;
+    box-shadow: #FFFFFF 0px 0px 0px 0px;
 
+}
 .cursor {
     z-index: 0;
-    width: 1000px;
-    height: 1000px;
+    width:  700px;
+    height: 700px;
     border-radius: 1000px;
     transition: all 200ms ease-out;
     position: fixed;
@@ -16,7 +22,8 @@
     left: 0;
     top: 0;
     transform:  translate(calc(-50% + 15px), -50%);
-    filter: blur(100px);
+    filter: blur(50px);
+    opacity: .8;
 }
 
 canvas{

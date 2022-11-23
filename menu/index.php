@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -8,7 +12,6 @@
     <link rel="stylesheet/less" type="text/css" href="public/styles/menu.scss">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--captcha-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!--utils-->
@@ -16,6 +19,7 @@
     <?php include_once "utils/menu.php" ?>
     <!--vues-->
     <?php include_once "vues/home.php"?>
+    <?php include_once "vues/propos.php"?>
     <?php include_once "vues/projets.php" ?>
     <?php include_once "vues/experience.php" ?>
     <?php include_once "vues/formation.php" ?>

@@ -2,7 +2,7 @@
     <div id="title_home_container">
         <h1>PROJETS</h1>
 
-        <div class="projet_container_row">
+        <div class="projet_container_row backdrop_blur">
             <div class="f-col row_projets">
                 <div class="f-row set-project_text">
                     <input type="checkbox" class="tabs_radio" name="tabs_projet" id="tab1">

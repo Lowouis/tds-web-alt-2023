@@ -24,11 +24,9 @@
                 </div>
 
                 <div class="f-row">
-                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                    <span class="material-symbols-outlined send_btn">send<button hidden name="contact" type="submit"></button></span>
+
                 </div>
-
-
-                <span class="material-symbols-outlined send_btn">send<button hidden name="contact" type="submit"></button></span>
             </form>
         </div>
     </div>
