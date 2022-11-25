@@ -13,6 +13,9 @@ $contact = $data['contact'];
                         <?php echo '<'.$champs["balise"].' class="input_contact" type="'. $champs["type"].'" name="contact" placeholder="'.$champs["placeholder"].'">'; echo ($champs["balise"] == "textarea") ? '</textarea>' : ""; ?>
                     </div>
                 <?php endforeach;?>
+                <div class="f-row overflow-hidden">
+                    <span class="material-symbols-outlined send_btn">send<button hidden name="contact" type="submit"></button></span>
+                </div>
             </form>
         </div>
     </div>

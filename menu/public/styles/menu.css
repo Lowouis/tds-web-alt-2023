@@ -71,7 +71,13 @@ textarea, input{
     transition: all .2s;
     transform: rotate(1deg);
 
+
 }
+
+.overflow-hidden{
+    overflow: hidden !important;
+}
+
 .send_btn:hover{
     transform: scale(.7) rotate(-360deg);
     background-color: #ea5600;
@@ -174,7 +180,7 @@ body{
     backdrop-filter:blur(40px);
     border-radius:10px ;
     width: auto;
-    height: 100px;
+    height: 80px;
 }
 .f-row_s{
     display: flex;
@@ -359,7 +365,7 @@ body{
     height: 100%;
 }
 #loadPage{
-    background-color: #8d74b9;
+    background-color: #6b311d;
     position: absolute;
     z-index: 1000;
     top: -3000px;

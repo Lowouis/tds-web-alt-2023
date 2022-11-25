@@ -1,11 +1,10 @@
-const vues = ["nav_home","nav_propos", "nav_projets", "nav_experience", "nav_formation", "nav_competences", "nav_contact"];
+const vues = ["nav_home","nav_propos", "nav_projets", "nav_experience", "nav_formation", "nav_competence", "nav_contact"];
 let previousVue = "home"
 let oldTabsPerk = "tabs_content_1";
 let oldTabsPerkContent ="";
 addEventListener('click', function(e){
     showContentPerk(e.target);
     //e.target.id.startsWith('skills_')
-    console.log(e.target.id);
     e.target.id === "cookie_enable" ? document.getElementById("rgpd").classList.add("hidden") : null;
     e.target.id.startsWith('card')?  expand(e.target.parentElement) : null;
     e.target.id.startsWith('tab')?  showOnChecked(e.target) : null;
@@ -58,6 +57,7 @@ const hide = (element) => {
 }
 const loadPage = document.getElementById("loadPage");
 const load = (target) => {
+    console.log(target);
     active_resp ? menu.classList.add('hidden') : menu.classList.remove('hidden');
     active_resp ? btn.innerHTML="menu" : btn.innerHTML="close";
     active_resp = !active_resp;

@@ -19,7 +19,7 @@ $label = $tabs['label'];
 
         <div class="tabs__skills_contents">
             <?php foreach ($contents as $key => $content): ?>
-                <div id="tabs_content_<?php echo $key; ?>" class="contents__containers ">
+                <div id="tabs_content_<?php echo $key; ?>" class="contents__containers <?php echo $key !== 1 ? 'full-hidden' : null ?>">
                     <div class="left__element_tabs">
                         <p><?php echo $content['content']; ?></p>
                         <div class="f-row_s perk_load_container">

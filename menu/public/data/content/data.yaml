@@ -47,13 +47,13 @@ experience:
     id:                     experience
     title:                  EXPERIENCE
     tabs:
-        1:
+        11:
             entreprise:     SAP Labs
             date:           2021 - 2022
             post:           Developpeur Application
             taches:         Développement d'une application web en ReactJS
             lieu:           Domicile
-        2:
+        12:
             entreprise:     Goclefcd
             date:           2020
             post:           Developpeur Application
@@ -88,6 +88,12 @@ formation:
            content:         Contenu de la formation
        2:
            diplome:         BTS SIO
+           date:            2021 - 2022
+           enseigne:        Lieu d'enseignement
+           lieu:            Lieu
+           content:         contenu de la formation
+       3:
+           diplome:         BTS SIO azazazaz
            date:            2021 - 2022
            enseigne:        Lieu d'enseignement
            lieu:            Lieu
