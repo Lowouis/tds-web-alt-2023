@@ -1,5 +1,4 @@
 <?php
-$data = yaml_parse_file("./public/data/content/data.yaml");
 $home = $data['home'];
 ?>
 

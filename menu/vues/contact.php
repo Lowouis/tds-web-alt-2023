@@ -1,11 +1,10 @@
 <?php
-$data = yaml_parse_file("./public/data/content/data.yaml");
 $contact = $data['contact'];
 ?>
 
 <div id="contact" class="full-hidden">
     <div id="title_home_container">
-        <h1>CONTACT</h1>
+        <h1><?php echo $contact["title"]; ?></h1>
         <div class="contact__container">
             <form action="?" method="POST">
                 <?php foreach($contact["champs"] as $key => $champs):?>

@@ -168,12 +168,13 @@ body{
     margin: 15px;
     color:#FFA8A8;
     transition: all .3s;
+    padding: 10px;
 }
 .nav__tabs{
     backdrop-filter:blur(40px);
     border-radius:10px ;
     width: auto;
-    height: 70px;
+    height: 100px;
 }
 .f-row_s{
     display: flex;
@@ -675,4 +676,29 @@ body{
 #cookie_enable:hover+#cookie_logo{
     transform: rotate(180deg) !important;
     transition: all .5s ease-in-out;
+}
+
+.btn-tabs{
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: wheat;
+    font-size: 20px;
+    display: flex;
+    transition: all .2s ease-in-out;
+}
+.btn-tabs:hover{
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    background-color: #ffc977;
+    width: max-content;
+}
+.tabs_arrow{
+    font-size: 30px !important;
+}
+
+label, p,.tabs__skills_contents, .label__add   {
+    overflow: hidden !important;
 }

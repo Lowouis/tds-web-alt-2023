@@ -25,111 +25,168 @@ menu:
 
 #########VUES###########
 home:
-   id:                     home
-   title:                  LOUIS GURITA
-   under_title:            APPRENTI DEVELOPPEUR APPLICATION CHEZ SAP LABS
-   text_content:           Après 3ans à l’université à y développer différents projets et y apprendre plusieurs languages et plusieurs
-                           concepts ainsi que des maths avancés, l’ensemble trop théorique ne m’attrayait plus autant et mon envie de rentrer dans
-                           le monde professionnelle, je décide alors en 2021 de faire une formation en développement en alternance, c’est pourquoi
-                           j’ai choisis de faire un BTS SIO. Sur ce site vous verrez mon parcours, mes expériences et mes projets.
+   id:                      home
+   title:                   LOUIS GURITA
+   under_title:             APPRENTI DEVELOPPEUR APPLICATION CHEZ SAP LABS
+   text_content:            Après 3ans à l’université à y développer différents projets et y apprendre plusieurs languages et plusieurs
+                            concepts ainsi que des maths avancés, l’ensemble trop théorique ne m’attrayait plus autant et mon envie de rentrer dans
+                            le monde professionnelle, je décide alors en 2021 de faire une formation en développement en alternance, c’est pourquoi
+                            j’ai choisis de faire un BTS SIO. Sur ce site vous verrez mon parcours, mes expériences et mes projets.
 
 
 propos:
-   id:                     propos
-   title:                  A PROPOS
-   text_content:           Après 3ans à l’université à y développer différents projets et y apprendre plusieurs languages et plusieurs
-                           concepts ainsi que des maths avancés, l’ensemble trop théorique ne m’attrayait plus autant et mon envie de rentrer dans
-                           le monde professionnelle, je décide alors en 2021 de faire une formation en développement en alternance, c’est pourquoi
-                           j’ai choisis de faire un BTS SIO. Sur ce site vous verrez mon parcours, mes expériences et mes projets.
+   id:                      propos
+   title:                   A PROPOS
+   text_content:            Après 3ans à l’université à y développer différents projets et y apprendre plusieurs languages et plusieurs
+                            concepts ainsi que des maths avancés, l’ensemble trop théorique ne m’attrayait plus autant et mon envie de rentrer dans
+                            le monde professionnelle, je décide alors en 2021 de faire une formation en développement en alternance, c’est pourquoi
+                            j’ai choisis de faire un BTS SIO. Sur ce site vous verrez mon parcours, mes expériences et mes projets.
 
 
 experience:
-   id:                     experience
-   title:                  EXPERIENCE
-   tabs:
-       1:
-           entreprise:    SAP Labs
-           date:          2021 - 2022
-           post:          Developpeur Application
-           taches:        Développement d'une application web en ReactJS
-           lieu:          Domicile
-       2:
-           entreprise:    Goclefcd
-           date:          2020
-           post:          Developpeur Application
-           taches:        Développement d'une application web en ReactJS
-           lieu:          Domicile
+    id:                     experience
+    title:                  EXPERIENCE
+    tabs:
+        1:
+            entreprise:     SAP Labs
+            date:           2021 - 2022
+            post:           Developpeur Application
+            taches:         Développement d'une application web en ReactJS
+            lieu:           Domicile
+        2:
+            entreprise:     Goclefcd
+            date:           2020
+            post:           Developpeur Application
+            taches:         Développement d'une application web en ReactJS
+            lieu:           Domicile
+
+
 projets:
-    id:             projet
-    title:          PROJETS
+    id:                     projet
+    title:                  PROJETS
     tabs:
         0:
-            nom:           Algo A*
-            date:          2021 - 2022
-            content:       Developpeur Application
-            button:        App
+            nom:            Algo A*
+            date:           2021 - 2022
+            content:        Developpeur Application
+            button:         App
         1:
-            nom:           IA nim game
-            date:          2020
-            content:       Developpeur Application
-            button:        Rapport
+            nom:            IA nim game
+            date:           2020
+            content:        Developpeur Application
+            button:         Rapport
 
 formation:
-   id:                     formation
-   title:                  FORMATIONS
+   id:                      formation
+   title:                   FORMATIONS
    tabs:
        1:
-           diplome:       BTS SIO
-           date:          2021 - 2022
-           enseigne:      Lieu d'enseignement
-           lieu:          Lieu
-           contenu:       Contenu de la formation
+           diplome:         BTS SIO
+           date:            2021 - 2022
+           enseigne:        Lieu d'enseignement
+           lieu:            Lieu
+           content:         Contenu de la formation
        2:
-           diplome:       BTS SIO
-           date:          2021 - 2022
-           enseigne:      Lieu d'enseignement
-           lieu:          Lieu
-           contenu:       Contenu de la formation
+           diplome:         BTS SIO
+           date:            2021 - 2022
+           enseigne:        Lieu d'enseignement
+           lieu:            Lieu
+           content:         contenu de la formation
 
 competences:
-   id:                     competences
-   title:                  COMPETENCES
+   id:                      competence
+   title:                   COMPETENCES
    tabs:
-       1:
-           titre:         Python
-           text_content:  80
-           illustrations:
-               ./public/data/content/illustrations/html.png
-               ./public/data/content/illustrations/html.png
-               ./public/data/content/illustrations/html.png
-               ./public/data/content/illustrations/html.png
-           pourcentage:   80
-
+        label:
+            1:              Python
+            2:              Python
+            3:              Python
+            4:              Python
+            5:              Python
+            6:              Python
+            7:              Python
+        contents:
+            1:
+                content:    Expliquer le contenu de la compétence
+                niveau:     90
+                img:
+                    1:      /assets/img/competences/python.png
+                    2:      /assets/img/competences/python.png
+                    3:      /assets/img/competences/python.png
+                    4:      /assets/img/competences/python.png
+            2:
+                content:    Expliquer le contenu de la compétence
+                niveau:     90
+                img:
+                    1:      /assets/img/competences/python.png
+                    2:      /assets/img/competences/python.png
+                    3:      /assets/img/competences/python.png
+                    4:      /assets/img/competences/python.png
+            3:
+                content:    Expliquer le contenu de la compétence
+                niveau:     90
+                img:
+                    1:      /assets/img/competences/python.png
+                    2:      /assets/img/competences/python.png
+                    3:      /assets/img/competences/python.png
+                    4:      /assets/img/competences/python.png
+            4:
+                content:    Expliquer le contenu de la compétence
+                niveau:     90
+                img:
+                    1:      /assets/img/competences/python.png
+                    2:      /assets/img/competences/python.png
+                    3:      /assets/img/competences/python.png
+                    4:      /assets/img/competences/python.png
+            5:
+                content:    Expliquer le contenu de la compétence
+                niveau:     90
+                img:
+                    1:      /assets/img/competences/python.png
+                    2:      /assets/img/competences/python.png
+                    3:      /assets/img/competences/python.png
+                    4:      /assets/img/competences/python.png
+            6:
+                content:    Expliquer le contenu de la compétence
+                niveau:     90
+                img:
+                    1:      /assets/img/competences/python.png
+                    2:      /assets/img/competences/python.png
+                    3:      /assets/img/competences/python.png
+                    4:      /assets/img/competences/python.png
+            7:
+                content:    Expliquerazazazaz le contenu de la compétence
+                niveau:     90
+                img:
+                    1:      /assets/img/competences/python.png
+                    2:      /assets/img/competences/python.png
+                    3:      /assets/img/competences/python.png
+                    4:      /assets/img/competences/python.png
 
 contact:
     id:                     contact
     title:                  CONTACT
     champs:
         0:
-            label:         Prénom
-            balise:        input
-            placeholder:   Entrez votre prénom
-            type:          text
+            label:          Prénom
+            balise:         input
+            placeholder:    Entrez votre prénom
+            type:           text
         1:
-            label:         Nom
-            balise:        input
-            placeholder:   Entrez votre nom
-            type:          text
+            label:          Nom
+            balise:         input
+            placeholder:    Entrez votre nom
+            type:           text
         2:
-            label:         Adresse mail
-            balise:        input
-            placeholder:   Entrez votre adresse mail
-            type:          email
+            label:          Adresse mail
+            balise:         input
+            placeholder:    Entrez votre adresse mail
+            type:           email
         3:
-            label:         Message
-            balise:        textarea
-            placeholder:   Entrez votre message
-            type:          text
+            label:          Message
+            balise:         textarea
+            placeholder:    Entrez votre message
+            type:           text
 
 
 

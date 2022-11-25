@@ -22,8 +22,8 @@
     left: 0;
     top: 0;
     transform:  translate(calc(-50% + 15px), -50%);
-    filter: blur(50px);
-    opacity: .8;
+    opacity: 1;
+    filter: blur(40px);
 }
 
 canvas{
