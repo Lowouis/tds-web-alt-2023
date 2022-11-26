@@ -166,7 +166,7 @@ competences:
                 content:    J'ai réaliser des petits programme en C, j'ai aussi acquis des connaissances en programmation système et de gestion des cases mémoires.
                 niveau:     25
                 img:
-                    1:      none
+                    1:      ./public/data/img/c.png
                     2:      none
                     3:      none
                     4:      none
@@ -191,7 +191,7 @@ competences:
                 niveau:     40
                 img:
                     1:      ./public/data/img/sql.png
-                    2:      ./public/data/img/twig.webp
+                    2:      ./public/data/img/twig.png
                     3:      none
                     4:      none
             6:
@@ -241,3 +241,5 @@ contact:
 ##########OTHERS PATHS###########
 img_src:
     0: ./public/data/img/pp.jpg
+
+rgpd: Ce site n'utilise pas de cookies ou technologies similaires dans votre propre intérêt, vous garantir une meilleure expérience utilisateur.

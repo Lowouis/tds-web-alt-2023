@@ -39,7 +39,7 @@
 						</div>
 					</div>
 					<div class="cell" onclick="window.location='../webarena/web-arena.html';">
-						<h3 href="https://google.fr">Web Arena</h3>![](../../../../AppData/Local/Temp/r4xkr231.bmp)
+						<h3 href="https://google.fr">Web Arena</h3>
 						<div class="lang">
 							<a>Languages:</a>
 							<a class="lang-detail">HTML, CSS</a>
@@ -59,11 +59,11 @@
 							<a class="lang-detail">HTML, CSS, PHP</a>
 						</div>
 					</div>
-					<div class="cell" onclick="window.location='../folio/index.php';">
-						<h3 href="#">Porfolio</h3>
+					<div class="cell" onclick="window.location='../portfolio/index.php';">
+						<h3 href="#">FOLIO</h3>
 						<div class="lang">
 							<a>Languages:</a>
-							<a class="lang-detail">HTML, CSS, JS</a>
+							<a class="lang-detail">HTML, CSS, JS, YAML</a>
 						</div>
 					</div>
 					<div class="cell" onclick="location.href='https://first-react-project-todolist.vercel.app/';">
@@ -94,6 +94,7 @@
                             <a class="lang-detail">PHP,CSS,JS</a>
                         </div>
                     </div>
+
 				</div>
 		</div>
 		<footer>

@@ -70,7 +70,7 @@ body{
     background-color: #892600;
     position: absolute;
     z-index: 1000;
-    top: -3500px;
+    top: -4500px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -180,10 +180,11 @@ body{
 
 .about-text{
     mix-blend-mode: difference;
-    margin: 50px 0;
+    margin: 50px 0 !important;
     color: #FAD5A5;
     width: var(--content-width);
     transition: all .2s;
+
 }
 .about-text p {
     margin: 20px 0;
@@ -456,6 +457,7 @@ label, p,.tabs__skills_contents, .label__add {
     font-family: 'Rubik Mono One', sans-serif;
     font-size: var(--little-title);
     color: 	#FFDEAD;
+    margin-bottom: 30px;
 }
 
 /***************************/
@@ -607,7 +609,7 @@ textarea, input{
     .row_projets{
         justify-content: center;
     }
-    .contact__container *, .contact__container *::placeholder{
+    .contact__container *, .contact__container *::placeholder, .contact__container *[type=text], .contact__container *[type=email]{
         font-size: 70px;
         margin: 10px;
     }
@@ -616,6 +618,7 @@ textarea, input{
     }
     .send_btn{
         font-size: 150px!important;
+        overflow: hidden !important;
     }
 
     .nav__tabs{
@@ -630,9 +633,12 @@ textarea, input{
         transition: all .2s;
     }
     .menu-container{
-        transform: scale(2) !important;
+        transform: scale(1.8) !important;
         right: 20px!important;
-        top: 380px!important;
+        top: 330px!important;
+    }
+    .about-text{
+        margin: 0;
     }
 }
 @media only screen and (max-height: 1090px) {
@@ -656,6 +662,9 @@ textarea, input{
     .resume-btn,.clickable-square{
         transform: scale(1.2);
         transition: all .2s;
+    }
+    .send_btn{
+        overflow: hidden !important;
     }
 }
 @media only screen and (max-height: 1090px) {
@@ -733,7 +742,7 @@ textarea, input{
 }
 
 .menu-container a:hover{
-    background-color: rgba(255, 222, 173, .5);
+    background-color: rgb(255 157 157 / 50%);
     cursor: pointer;
     transition: all .1s ease-in-out;
     text-decoration: underline;
