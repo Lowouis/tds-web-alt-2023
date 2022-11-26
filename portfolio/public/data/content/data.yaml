@@ -1,0 +1,243 @@
+##########MENU###########
+menu:
+    1:
+        - Home
+        - nav_home
+    2:
+        - A propos
+        - nav_propos
+    3:
+        - Projets
+        - nav_projets
+    4:
+        - Experiences
+        - nav_experience
+    5:
+        - Formations
+        - nav_formation
+    6:
+        - Compétences
+        - nav_competence
+    7:
+        - Contact
+        - nav_contact
+
+
+#########VUES###########
+home:
+   id:                      home
+   title:                   LOUIS GURITA
+   under_title:             APPRENTI DEVELOPPEUR APPLICATION CHEZ SAP LABS
+   text_content:            Après 3ans à l’université à y développer différents projets et y apprendre plusieurs languages et plusieurs
+                            concepts ainsi que des maths avancés, l’ensemble trop théorique ne m’attrayait plus autant et mon envie de rentrer dans
+                            le monde professionnelle, je décide alors en 2021 de faire une formation en développement en alternance, c’est pourquoi
+                            j’ai choisis de faire un BTS SIO. Sur ce site vous verrez mon parcours, mes expériences et mes projets.
+
+
+propos:
+   id:                      propos
+   title:                   A PROPOS
+   text_content:            Après 3ans à l’université à y développer différents projets et y apprendre plusieurs languages et plusieurs
+                            concepts ainsi que des maths avancés, l’ensemble trop théorique ne m’attrayait plus autant et mon envie de rentrer dans
+                            le monde professionnelle, je décide alors en 2021 de faire une formation en développement en alternance, c’est pourquoi
+                            j’ai choisis de faire un BTS SIO. Sur ce site vous verrez mon parcours, mes expériences et mes projets.
+
+
+experience:
+    id:                     experience
+    title:                  EXPERIENCE
+    tabs:
+        11:
+            entreprise:     SAP Labs
+            date:           2022- 2024
+            post:           Developpeur Application & Support IT
+            taches:         Apprentissage de Node, CAP SAP, UI5 & Aider les utilisateurs a résoudre leurs problèmes informatiques.
+            lieu:           8 rue du commodore, 14000 Caen
+        12:
+            entreprise:     Goclefcd
+            date:           2022
+            post:           Developpeur Application Symfony
+            taches:         Développement d’application Symfony, Développement d’application en PHP, Développement interface administrateur.
+            lieu:           Domicile
+        13:
+            entreprise:     SupplyWeb
+            date:           2021 | 2022
+            post:           Préparateur de commande
+            taches:         Préparation de commande, Préparation de colis, Préparation de livraison.
+            lieu:           Route de la Sablonnière, 14980 Rots
+
+        14:
+            entreprise:     McDonald’s
+            date:           2020
+            post:           Employé polyvalent
+            taches:         Préparation de commande, Distribution de plateau, Plonge.
+            lieu:           44 Avenue de la Côte de Nacre, 14000 Caen
+
+
+projets:
+    id:                     projet
+    title:                  PROJETS
+    tabs:
+        0:
+            nom:            Algorithm A*
+            date:           2021
+            content:        Nous devions créer une “intelligence artificielle”, ou je devais utilisé l’algorithme A* dans un programme en JAVA. Le jeux ricochet robot était à reproduire avec son interface graphique. Je devais aussi créer plusieurs plateau de jeu aléatoire. Le tout sur un durée donnée de 4 mois, avec une soutenance oral et un rapport écrit.
+            button:         Rapport
+            src:            ./public/data/content/rapport_a_star.pdf
+        1:
+            nom:            Nim Game
+            date:           2019
+            content:        Pour ce projet nous devions réaliser une “intelligence artificielle” qui gagne ou égalise toutes les parties de jeu de nim que l’on jouait contre l’ordinateur. Aucun affichage n’était demandé, le jeu ce était sur le terminal.
+            button:         Pas d'archive
+            src:            #
+
+        2:
+            nom:            Netflix Clone
+            date:           2022
+            content:        Ce projet est un projet personnel, je voulais faire un clone de netflix pour apprendre le React. Dans ce projet j’utilise le module “Redux” et “Axios”. J utilise aussi firebase pour le systeme d’authentification. L’application est disponible sur Firebase et sur Vercel.
+            button:         App
+            src:            https://netflix-clone-8bb18.web.app/
+
+        3:
+            nom:            Bataille Navale
+            date:           2020
+            content:        Nous deviens crée un jeu de bataille naval en Java avec une interface visuel. Je devais suivre le modèle MCV (Model View Controller) et créer un algorithme de placement des bateaux aléatoire. Le tout sur un durée donnée de 2 mois, avec une soutenance oral et un rapport écrit.
+            button:         Github
+            src:            https://github.com/Lowouis/BoatWar
+
+        4:
+            nom:            Generateur de ville
+            date:           2019
+            content:        Nous deviens créer un simulateur de ville, avec un affichage et un suivi statistique. Le jeu évolue avec une génération complète démographique (enfants, naissance, mortalité, santé, reproduction, maison, routes, etc).
+            button:         Pas d'archive
+            src:            #
+
+formation:
+   id:                      formation
+   title:                   FORMATIONS
+   tabs:
+       1:
+           diplome:         Brevet de technicien supérieur - Services informatiques aux organisations
+           date:            2022 - 2024
+           enseigne:        CaenSup - Sainte Ursule
+           lieu:            Caen
+           content:         Apprentissage des systèmes et des languages informatique en option développement.
+       2:
+           diplome:         Licence informatique
+           date:            2019 - 2022
+           enseigne:        UFR des sciences
+           lieu:            Caen
+           content:         Apprentissage et développement de projets informatique, maths avancés, algorithmique, calcule matricielle.
+       3:
+           diplome:         Diplôme du CLC - Langue anglaise
+           date:            2015
+           enseigne:        Université de Cambridge
+           lieu:            Cambridge
+           content:         Développement de la langue anglaise, compréhension orale et écrite, écriture et expression orale.
+       4:
+           diplome:         Baccalauréat sciences et technologies du management et de la gestion
+           date:            2017
+           enseigne:        Lycée Alfred Kastler
+           lieu:            Caen
+           content:         Apprentissage du management, droit, économie, gestion, comptabilité, marketing, anglais.
+
+competences:
+   id:                      competence
+   title:                   COMPETENCES
+   tabs:
+        label:
+            1:              Python
+            2:              C
+            3:              Javascript
+            4:              Java
+            5:              PHP
+            6:              CSS
+            7:              Latex
+        contents:
+            1:
+                content:    J'ai réaliser plusieurs programme en Python, j'ai aussi appris à utiliser les modules numpy, matplotlib, pygame. J'ai également fait plusieurs projets en objet orienté.
+                niveau:     50
+                img:
+                    1:      ./public/data/img//numpy.png
+                    2:      ./public/data/img//matplotlib.png
+                    3:      ./public/data/img/pygame.webp
+                    4:      none
+            2:
+                content:    J'ai réaliser des petits programme en C, j'ai aussi acquis des connaissances en programmation système et de gestion des cases mémoires.
+                niveau:     25
+                img:
+                    1:      none
+                    2:      none
+                    3:      none
+                    4:      none
+            3:
+                content:    J'ai une assez bonne connaissance dans l'ensemble de javascript, j'ai appris à utiliser les modules react, redux, axios, firebase, etc. J'ai aussi appris à utiliser le module node.js. J'ai acquis les concepts avancée comme l'asynchrone.
+                niveau:     70
+                img:
+                    1:      ./public/data/img//react.png
+                    2:      ./public/data/img//node.png
+                    3:      ./public/data/img//jquery.png
+                    4:      ./public/data/img//npm.png
+            4:
+                content:    Bonne connaissance de la programmation orienté objet. J'ai réaliser différents projets en Java que vous pourrez découvrir dans la section "Projets". J'ai acquis par exemple le concept de classe Abstraite, Interface, etc.
+                niveau:     50
+                img:
+                    1:      ./public/data/img/java.png
+                    2:      none
+                    3:      none
+                    4:      none
+            5:
+                content:    J'ai appris à utiliser le PHP pour créer des sites web dynamique. J'ai aussi appris à utiliser le framework Symfony.
+                niveau:     40
+                img:
+                    1:      ./public/data/img/sql.png
+                    2:      ./public/data/img/twig.webp
+                    3:      none
+                    4:      none
+            6:
+                content:    Très bonne connaissance de CSS, j'ai appris à utiliser le framework Bootstrap et Tailwinds. J'ai aussi appris à utiliser le préprocesseur SASS ou SCSS.
+                niveau:     80
+                img:
+                    1:      ./public/data/img/bootstrap.jpg
+                    2:      ./public/data/img/tailwind.png
+                    3:      ./public/data/img/sass.png
+                    4:      none
+            7:
+                content:    J'ai appris a rédiger des documents scientifiques avec le langage Latex. J'ai aussi appris à utiliser le module matplotlib pour créer des graphiques.
+                niveau:     70
+                img:
+                    1:      ./public/data/img/latex.png
+                    2:      none
+                    3:      none
+                    4:      none
+
+contact:
+    id:                     contact
+    title:                  CONTACT
+    champs:
+        0:
+            label:          Prénom
+            balise:         input
+            placeholder:    Entrez votre prénom
+            type:           text
+        1:
+            label:          Nom
+            balise:         input
+            placeholder:    Entrez votre nom
+            type:           text
+        2:
+            label:          Adresse mail
+            balise:         input
+            placeholder:    Entrez votre adresse mail
+            type:           email
+        3:
+            label:          Message
+            balise:         textarea
+            placeholder:    Entrez votre message
+            type:           text
+
+
+
+##########OTHERS PATHS###########
+img_src:
+    0: ./public/data/img/pp.jpg
