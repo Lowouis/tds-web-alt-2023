@@ -20,6 +20,8 @@ $tabs = $experience['tabs'];
                 </div>
             </div>
             <?php endforeach; ?>
+            <a href="<?php echo $data["cv"] ?>" target="_blank" class="cv_btn">Curriculum Vitae</a>
+
         </div>
     </div>
 </div>

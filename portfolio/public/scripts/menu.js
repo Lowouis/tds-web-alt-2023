@@ -7,5 +7,3 @@ btn.addEventListener('click', () => {
     active_resp ? btn.innerHTML="menu" : btn.innerHTML="close";
     active_resp = !active_resp;
 });
-
-

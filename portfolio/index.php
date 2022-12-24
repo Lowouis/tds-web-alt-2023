@@ -22,13 +22,13 @@ $data = yaml_parse_file("./public/data/content/data.yaml"); ?>
         include_once "utils/load_components.php";
         include_once "utils/menu.php";
         //vues
-        include "vues/home.php";
-        include "vues/propos.php";
-        include "vues/projets.php";
-        include "vues/experience.php";
-        include "vues/formation.php";
-        include "vues/contact.php";
-        include "vues/competence.php";
+        include_once "vues/home.php";
+        include_once "vues/propos.php";
+        include_once "vues/projets.php";
+        include_once "vues/experience.php";
+        include_once "vues/formation.php";
+        include_once "vues/contact.php";
+        include_once "vues/competence.php";
         ?>
     </body>
     <!--scripts-->

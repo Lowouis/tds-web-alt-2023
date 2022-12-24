@@ -100,10 +100,25 @@ body{
 /***********************/
 
 /*********GLOBAL********/
+.cv_btn{
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+    background-color: #892600;
+}
+.cv_btn:hover{
+    transition: all 0.3s;
+    color:  #892600;
+    background-color: white;
+}
 .link{
     text-decoration: none;
     color: black;
-;
+
 }
 .shd{
     text-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
@@ -490,7 +505,9 @@ label, p,.tabs__skills_contents, .label__add {
 
 /*****CONTACT*******/
 
-
+.contact{
+    width: 30px;
+}
 .contact__container{
     width: var(--content-width);
 }
@@ -533,13 +550,13 @@ textarea, input{
     border-radius: 100px;
     border: 2px solid wheat !important;
     transition: all .2s;
-    transform: rotate(1deg);
     backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0);
 
 
 }
 .send_btn:hover{
-    transform: scale(.7) rotate(-360deg);
+    transform: scale(.8);
     background-color: #ea5600;
     color: #fff;
     border: 2px solid #ea5600 !important;
@@ -592,7 +609,7 @@ textarea, input{
     #rgpd{
         transform: scale(1.7) translate(-30%, -30%);
         transform-origin: center;
-        width: 400px;
+        width: 100%;
     }
     .projet_container_row{
         width: 100%;
@@ -636,6 +653,10 @@ textarea, input{
         transform: scale(1.8) !important;
         right: 20px!important;
         top: 330px!important;
+
+    }
+    .menu-container a{
+        text-decoration: none !important;
     }
     .about-text{
         margin: 0;
@@ -736,9 +757,16 @@ textarea, input{
     flex-direction: column;
 
 }
+#nav_github, #nav_linkedin{
+    background-color: rgba(174,196,255,0.4);
+}
+#nav_github:hover, #nav_linkedin:hover{
+    background-color: rgba(174,196,255,0.6);
+}
 
 .menu-container a{
     padding: 20px;
+    color: black;
 }
 
 .menu-container a:hover{
@@ -766,14 +794,17 @@ textarea, input{
     z-index: 100;
     border: solid 2px orangered;
     position: fixed;
-    bottom: 10px;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 500px;
+    width: 100%;
     height: auto;
     background-color: rgba(255, 62, 0, 0.6);
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     color: wheat;
+}
+.rgpb__box *{
+    overflow: hidden !important;
 }
 
 #cookie_enable:hover+#cookie_logo{
@@ -782,43 +813,49 @@ textarea, input{
 }
 
 .rgpd__text{
-    padding: 8px;
+    padding: 44px;
+    font-size: 26px;
+    text-align: center;
     display: flex;
     justify-content: center;
+    transform: rotate(0deg) !important;
+
+
+}
+.rgpd__btn:hover{
+    transition: all .4s ease-in-out;
+    transform: rotate(180deg) !important;
+
+
 }
 
 .rgbp__btn__container{
-    width: 100%;
+    z-index: 20 !important;
+    position: absolute;
+    top: 0 !important;
+    right: 0 !important;
+    width: 50px;
     height: 50px;
-}
-
-.rgbp__btn__container *{
-    width: 50%;
+    overflow: hidden !important;
 }
 .rgpd__btn{
-    font-size: 22px;
-    color: orangered;
-    background-color: #fac480;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 37px;
+    color: wheat;
+    background-color: transparent;
     border: none;
     outline: none;
     transition: all .2s ease-in-out;
 
 }
-.rgpd__btn:first-child{
-    border-right: solid 2px orangered;
-}
 .rgpd__btn:hover{
-
+    color: white;
     transition: all .2s ease-in-out;
     cursor: pointer;
-    color: white;
 }
-.rgpd__btn:hover:first-child{
-    background-color: rgba(126, 135, 11, 1);
-}
-.rgpd__btn:hover:last-child{
-    background-color: rgb(225, 15, 15);
-}
+
 /*********************************/
 
 

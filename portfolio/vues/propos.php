@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="f-row resp_pp">
-            <img class="pp_style" src="<?php echo $data['img_src'][0]?>">
+            <img alt="louis gurita profil" class="pp_style" src="<?php echo $data['img_src'][0]?>">
         </div>
     </div>
 </div>

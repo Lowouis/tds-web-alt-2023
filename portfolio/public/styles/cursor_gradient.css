@@ -8,8 +8,8 @@
 }
 .cursor{
     z-index: 0;
-    width:  700px;
-    height: 700px;
+    width:  1100px;
+    height: 1100px;
     border-radius: 1000px;
     transition: all 200ms ease-out;
     position: fixed;
@@ -18,7 +18,7 @@
     top: 0;
     transform:  translate(calc(-50% + 15px), -50%);
     opacity: 1;
-    filter: blur(40px);
+    filter: blur(50px);
 }
 
 canvas{

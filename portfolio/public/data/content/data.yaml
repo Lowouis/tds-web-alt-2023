@@ -3,27 +3,40 @@ menu:
     1:
         - Home
         - nav_home
+        - ""
     2:
         - A propos
         - nav_propos
+        - ""
     3:
         - Projets
         - nav_projets
+        - ""
     4:
         - Experiences
         - nav_experience
+        - ""
     5:
         - Formations
         - nav_formation
+        - ""
     6:
         - Compétences
         - nav_competence
+        - ""
     7:
         - Contact
         - nav_contact
-
-
-#########VUES###########
+        - ""
+    8:
+        - Github
+        - nav_github
+        - https://github.com/Lowouis
+    9:
+        - Linkedin
+        - nav_linkedin
+        - https://www.linkedin.com/in/louisgurita/
+        #########VUES###########
 home:
    id:                      home
    title:                   LOUIS GURITA
@@ -72,6 +85,7 @@ experience:
             post:           Employé polyvalent
             taches:         Préparation de commande, Distribution de plateau, Plonge.
             lieu:           44 Avenue de la Côte de Nacre, 14000 Caen
+
 
 
 projets:
@@ -220,26 +234,30 @@ contact:
             balise:         input
             placeholder:    Entrez votre prénom
             type:           text
+            name:           firstname
         1:
             label:          Nom
             balise:         input
             placeholder:    Entrez votre nom
             type:           text
+            name:           lastname
         2:
             label:          Adresse mail
             balise:         input
             placeholder:    Entrez votre adresse mail
             type:           email
+            name:           email
         3:
             label:          Message
             balise:         textarea
             placeholder:    Entrez votre message
             type:           text
+            name:           message
 
 
 
 ##########OTHERS PATHS###########
 img_src:
     0: ./public/data/img/pp.jpg
-
-rgpd: Ce site n'utilise pas de cookies ou technologies similaires dans votre propre intérêt, vous garantir une meilleure expérience utilisateur.
+cv: ./public/data/content/cv.png
+rgpd: Ce site n'utilise pas de cookies ou technologies similaires dans votre propre intérêt, vous garantir une meilleure expérience utilisateur. Les données recueillis ne sont utilisées que pour vous répondre. En utilisant ce site, vous acceptez l'utilisation des cookies.
