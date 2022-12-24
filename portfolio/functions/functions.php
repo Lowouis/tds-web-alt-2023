@@ -14,8 +14,8 @@ $phpmailer->Password = '6c3bc57f8f3cbb';
 $phpmailer->Subject = $_POST['objet'];
 $phpmailer->Body = $_POST['message'];
 try {
-    $phpmailer->setFrom("louisguritapro@gmail.com","Louis GURITA");
-    $phpmailer->addAddress($_POST['email'], $_POST['firstname']);
+    $phpmailer->setFrom($_POST['email'], $_POST['firstname']);
+    $phpmailer->addAddress("louisguritapro@gmail.com","Louis GURITA");
     $phpmailer->send();
 } catch (\PHPMailer\PHPMailer\Exception $e) {
     echo $e->errorMessage();

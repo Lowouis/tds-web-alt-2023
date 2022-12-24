@@ -53,14 +53,14 @@
 						</div>
 					</div>
 					<div class="cell" onclick="window.location='../gridgenerator/index.php';">
-						<h3 href="#">TD2</h3>
+						<h3 href="#">Grid simulator</h3>
 						<div class="lang">
 							<a>Languages:</a>
 							<a class="lang-detail">HTML, CSS, PHP</a>
 						</div>
 					</div>
 					<div class="cell" onclick="window.location='../portfolio/index.php';">
-						<h3 href="#">FOLIO</h3>
+						<h3 href="#">Portfolio - Louis GURITA</h3>
 						<div class="lang">
 							<a>Languages:</a>
 							<a class="lang-detail">HTML, CSS, JS, YAML</a>
@@ -88,7 +88,7 @@
 						</div>
 					</div>
                     <div class="cell"  onclick="location.href='../JS_Game/index.php';">
-                        <h3 href="#">MASTERMIND</h3>
+                        <h3 href="#">MasterMind</h3>
                         <div class="lang">
                             <a>Languages:</a>
                             <a class="lang-detail">PHP,CSS,JS</a>

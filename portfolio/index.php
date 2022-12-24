@@ -10,6 +10,7 @@ $data = yaml_parse_file("./public/data/content/data.yaml"); ?>
     <head>
         <meta charset="utf-8">
         <title>Louis GURITA - Portfolio</title>
+        <link rel="icon" href="public/data/img/logo.ico">
         <!--styles-->
         <link rel="stylesheet" type="text/css" href="public/styles/global.css">
         <link rel="stylesheet" type="text/css" href="public/styles/cursor_gradient.css">
