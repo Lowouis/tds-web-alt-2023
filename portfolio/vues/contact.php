@@ -7,7 +7,7 @@
                 <?php foreach($contact["champs"] as $key => $champs):?>
                     <div class="f-col">
                         <label class="label_contact"><?php echo $contact["champs"][$key]["label"] ?></label>
-                        <?php echo '<'.$champs["balise"].' class="input_contact" value="laa@g.fr" type="'. $champs["type"].'" name="'.$champs["name"].'" placeholder="'.$champs["placeholder"].'">'; echo ($champs["balise"] == "textarea") ? '</textarea>' : ""; ?>
+                        <?php echo '<'.$champs["balise"].' class="input_contact" value="" type="'. $champs["type"].'" name="'.$champs["name"].'" placeholder="'.$champs["placeholder"].'">'; echo ($champs["balise"] == "textarea") ? '</textarea>' : ""; ?>
                     </div>
                 <?php endforeach; ?>
                 <div class="f-row overflow-hidden">

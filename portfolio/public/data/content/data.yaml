@@ -230,17 +230,17 @@ contact:
     title:                  CONTACT
     champs:
         0:
-            label:          Prénom
-            balise:         input
-            placeholder:    Entrez votre prénom
-            type:           text
-            name:           firstname
-        1:
             label:          Nom
             balise:         input
             placeholder:    Entrez votre nom
             type:           text
-            name:           lastname
+            name:           firstname
+        1:
+            label:          Objet
+            balise:         input
+            placeholder:    Entrez l'objet de votre message
+            type:           text
+            name:           objet
         2:
             label:          Adresse mail
             balise:         input

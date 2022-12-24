@@ -1,0 +1,14 @@
+{
+    "name": "louis/tds-web-alt-2023",
+    "description": "Portfolio website for Louis TDS",
+    "authors": [
+        {
+            "name": "Lowouis",
+            "email": "louisguritapro@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^6.3",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
